@@ -3,25 +3,28 @@
    ============================== */
 
     
-.cl-card h2,
-.cl-card h3 {
-    font-weight: 600 !important;
-}
+.cl-card {
+	
+	h2,
+	h3 {
+		font-weight: 600 !important;
+	}
 
-.cl-card p {
-    font-size: 1rem !important;
-}
+	p {
+		font-size: 1rem !important;
+	}
 
-.cl-card .cl-button,
-.cl-card .cl-button {
-    color: #555 !important;
-}
+	.cl-button {
+		color: #555 !important;
+	}
 
-.cl-card:hover .cl-button,
-.cl-card:focus .cl-button {
-    background: $tedred !important;
-    border-top: 1px solid $tedred !important;
-    color: #fff !important;
+	&:hover .cl-button,
+	&:focus .cl-button {
+		background: $tedred !important;
+		border-top: 1px solid $tedred !important;
+		color: #fff !important;
+	}
+	
 }
 
 

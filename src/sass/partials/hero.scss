@@ -270,27 +270,54 @@
 
 
 #tedxhero.hero-followup {
+	
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center 70%;
-}
 
-#tedxhero.hero-followup #hero-buttons {
-	line-height: initial;
-	position: absolute;
-	width: 100%;
-	top: 70%;
-	left: 0;
-	text-align: center;
-}
 
-#tedxhero.hero-followup .hero-button {
-	display: block;
-	font-size: 1rem;
-	text-transform: uppercase;
-	line-height: 1;
-    margin: 0 auto .5rem;
-    width: 90%;
+	#hero-buttons {
+		line-height: initial;
+		position: absolute;
+		width: 100%;
+		top: 70%;
+		left: 0;
+		text-align: center;
+	}
+
+	.hero-button {
+		display: block;
+		font-size: 1rem;
+		text-transform: uppercase;
+		line-height: 1;
+		margin: 0 auto .5rem;
+		width: 90%;
+	}
+	
+	.hero-button a {
+	
+		display: block;
+		padding: .5rem 1rem;
+		line-height: initial;
+		border-radius: 3px;
+		color: #fff;
+		text-shadow: none;
+		background: rgba(0,0,0,.7);
+		border: 1px solid #fff;
+		box-shadow: 0 .1rem .3rem rgba(0,0,0,.8);
+		position: relative;
+		top: 0;
+		transition: all .1s ease-in-out;
+
+		&:hover {
+			background: $tedred;
+			border: 1px solid #f00;
+			color: #fff;
+			top: -2px;
+		}
+
+	}
+	
 }
 
 @media screen and (min-width: 600px) {
@@ -299,26 +326,4 @@
         margin: 0;
         width: auto;
     }
-}
-
-#tedxhero.hero-followup .hero-button a {
-	display: block;
-	padding: .5rem 1rem;
-	line-height: initial;
-	border-radius: 3px;
-	color: #fff;
-	text-shadow: none;
-	background: rgba(0,0,0,.7);
-	border: 1px solid #fff;
-	box-shadow: 0 .1rem .3rem rgba(0,0,0,.8);
-	position: relative;
-	top: 0;
-	transition: all .1s ease-in-out;
-}
-
-#tedxhero.hero-followup .hero-button a:hover {
-	background: $tedred;
-	border: 1px solid #f00;
-	color: #fff;
-	top: -2px;
 }
