@@ -1,0 +1,32 @@
+/* ==============================
+   oEMBEDS
+   ============================== */
+
+.oembed-instagram-com iframe,
+.oembed-twitter-com iframe,
+.oembed-facebook-com iframe {
+    width: 100% !important;
+    max-width: 360px !important; 
+}
+
+.oembed-youtube-com iframe {
+    max-width: 100%;
+}
+
+.alignright,
+.alignleft {
+    .oembed iframe {
+        max-width: 100%;
+    }
+}
+
+.cl-tiles .oembed iframe {
+    max-width: 100% !important;
+    margin: 0 !important;
+}
+
+.oembed-instagram-com p,
+.oembed-twitter-com p,
+.oembed-facebook-com p {
+    display: none;
+}

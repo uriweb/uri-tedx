@@ -1,0 +1,122 @@
+/* ==============================
+   JOIN US
+   ============================== */
+
+
+section#join-us {
+    
+    background: #fff;
+    text-align: center;
+    padding: 3rem 0 0;
+
+    h1 {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    img {
+        display: inline-block;
+        width: 21px;
+        margin-left: 15px;
+        position: relative;
+        top: 1px;
+    }  
+
+    p {
+        max-width: 100%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        font-size: 1.4rem;
+        font-weight: 700;
+        display: block;
+        padding-bottom: 3rem;
+        color: #000;
+        width: 100%;
+        max-width: 100%;
+        transition: all .1s ease-in-out;
+    }
+
+    label:hover {
+        cursor: pointer;
+        color: $tedred;
+    }
+
+    iframe {
+        display: block;
+        max-height: 450px;
+    }
+
+    #map {
+        overflow: hidden;
+        height: 0;
+        display: block;
+        border-bottom: 1px solid #eee;
+        transition: height .3s ease-in-out;
+    }
+
+    input:checked ~ #map {
+        height: 450px;
+        border-bottom: none;
+    }
+
+    div:nth-of-type(1) {
+        position: relative;
+        padding: 0;
+    }
+
+    div:nth-of-type(1) br {
+        display: none;
+    }
+
+    div:nth-of-type(2) {
+        padding: 2rem 0;
+    }
+    
+}
+
+
+.hashtag {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-left: 22px; 
+    color: #555;
+    background-image: url(images/twitter.png);
+    background-position: left center;
+    background-size: auto 14px;
+    background-repeat: no-repeat;
+    margin-top: .5rem;
+    width: auto;
+}
+
+@media screen and (min-width: 375px) {
+    section#join-us {
+        h1 {
+            font-size: 2.2rem;
+        }
+        
+        img {
+            margin-left: 20px;
+        }
+    }
+    
+    .hashtag {
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+    
+}
+
+/* WHAT IS */
+
+.what-is-cards {
+	margin-bottom: 4rem;
+}

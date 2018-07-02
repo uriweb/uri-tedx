@@ -1,0 +1,177 @@
+/* ==============================
+   TALKS
+   ============================== */
+
+#comments {
+    display: none;
+}
+
+body.single-talk {
+    
+    header.entry-header {
+        display: none;
+    }
+    
+    section {
+        padding: 0;
+    }
+    
+    .theatre iframe {
+        height: 300px;
+        transition: height .2s ease-in-out;
+    }
+    
+    .talk-info {
+        margin: 2rem 0 0;
+    }
+    
+    .talk-speaker {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        //border-bottom: 1px solid #ddd;
+        max-width: 100%;
+        //padding-bottom: .5rem;
+    }
+    
+    .talk-event {
+        color: #888;
+        font-weight: 400;
+    }
+    
+    .talk-title {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .talk-description {
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+    
+    .social-media-integration {
+        margin-bottom: 2rem;
+    }
+    
+    .social-media-integration:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .smi-widget {
+        float: left;
+        display: block;
+        line-height: 28px;
+        height: 28px;
+        position: relative;
+    }
+    
+    .share-button {
+        margin: 0 .5rem .5rem 0;
+    }
+    
+    .share-facebook {
+        margin-right: 1.2rem;
+    }
+    
+    .yt-stat {
+        color: #555;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .yt-stat strong {
+        color: #000;
+        font-size: 1.2rem;
+    }
+    
+    .yt-stat.yt-likes {
+        padding-left: 16px;
+        background-image: url('images/love.png');
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: auto 12px;
+    }
+    
+    .about-this-speaker {
+        padding: 1.5rem;
+        background: #f3f3f3;
+        border-radius: .5rem;
+        margin-bottom: 4rem;
+    }
+    
+    .about-this-speaker:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .headshot {
+        
+        width: 100px;
+        float: left;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+    
+        img {
+            width: 100%;
+			height: auto;
+            border-radius: 50%;
+        }
+        
+    }
+    
+    .bio {
+        
+        float: left;
+        max-width: 600px;
+    
+        h1 {
+            font-size: 1.2rem;
+            color: #000;
+            margin: 0;
+        }
+        
+        h2 {
+            font-size: 1rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: #888;
+            font-weight: 300;
+        }
+        
+        .bio-content {
+            font-size: .9rem;
+            padding: 0;
+            margin: 0;
+        }
+        
+    }
+    
+    .transcript {
+        margin: 0 auto 4rem;
+        font-size: 1rem;
+        max-width: 600px;
+        line-height: 2;
+        
+        h1 {
+            font-size: 1.4rem;
+            color: #000;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 600px) {
+    body.single-talk .theatre iframe {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body.single-talk .theatre iframe {
+        height: 500px;
+    }
+}

@@ -1,0 +1,186 @@
+/* ==============================
+   BRAND BAR
+   ============================== */
+
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+#brandbar {
+    
+    background: #fff;
+    border-bottom: 1px solid #eee;
+	width: 100%;
+    padding: 0;
+    background: $white;
+    position: relative;
+    z-index: 9990;
+
+    p:empty,
+    br {
+        display: none;
+    }
+
+    div {
+        padding: 1.3rem 1rem 1rem;
+        box-sizing: border-box;
+        transition: all .2s ease-in-out;
+    }
+
+    img {
+        height: 35px;
+        transition: height .2s ease-in-out;
+    }
+    
+}
+
+#tedx-nav-label {
+    
+    position: relative;
+    overflow: hidden;
+    display: block;
+    float: right;
+    top: 6px;
+    width: 0;
+    height: 23px;
+    padding-left: calc( 23 / 79 * 100px);
+    background-image: url(images/menu.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: auto 23px;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background-position: 100% 0;
+    }
+
+}
+
+#tedx-nav-toggle {
+    
+    display: none;
+
+    &:checked ~ #tedx-nav-label {
+        background-position: 100% 0;
+    }
+
+    &:checked ~ #tedx-nav {
+        display: block;
+    }
+    
+}
+
+#tedx-nav {
+    
+    display: none;
+    position: absolute;
+    top: calc(100% + 2px);
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+    z-index: 999;
+
+    li {
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    a {
+		color: #555;
+        display: block;
+        padding: 1rem .8rem;
+    }
+
+    a.active {
+        color: $tedred;
+    }
+
+    a:hover,
+    a:hover {
+        background: #eee;
+    }
+    
+}
+
+body.ln-about #ln-about,
+body.ln-speakers #ln-speakers,
+body.ln-watch #ln-watch,
+body.ln-team #ln-team {
+    a {
+        color: $tedred;
+    }
+}
+    
+
+@media screen and (min-width: 800px) {
+    
+    #tedx-nav-label {
+        display: none;
+    }
+    
+    #tedx-nav {
+        
+        position: relative;
+        top: initial;
+        right: initial;
+        box-shadow: none;
+        width: auto;
+        float: right;
+        display: block;
+        height: 35px;
+        line-height: 35px;
+        transition: height .2s ease-in-out, line-height .2s ease-in-out;
+
+        li {
+            display: inline-block;
+            list-style: none;
+            color: #555;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: .8rem;
+            line-height: 35px;
+            transition: all .2s ease-in-out;
+        }
+
+        li:not(:first-child) {
+            margin-left: 2.5rem;
+        }
+
+        a {
+            padding: 0;
+        }
+
+        a:hover,
+        a:hover {
+            background: transparent;
+        }
+        
+    }
+    
+}
+
+@media screen and (min-width: 1050px) {
+    #brandbar img {
+		height: 40px;
+	}
+    
+    #tedx-nav {
+        
+        height: 40px;
+        line-height: 40px;
+    
+        li {
+            line-height: 40px;
+            font-size: .9rem;
+        }
+        
+    }
+}

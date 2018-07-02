@@ -1,0 +1,16 @@
+# used to remove files from deployment using `git archive`
+# git files
+.github export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+# testing files
+.codesniffer.ruleset.xml export-ignore
+.jscsrc export-ignore
+.jshintignore export-ignore
+.sniff export-ignore
+.travis.yml export-ignore
+# gulp files
+gulpfile.js export-ignore
+package.json export-ignore
+# src files 
+src export-ignore

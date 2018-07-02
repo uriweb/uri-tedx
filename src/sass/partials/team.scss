@@ -1,0 +1,49 @@
+/* ==============================
+   TEAM
+   ============================== */
+
+
+.team-wrapper {
+    margin-top: 2rem;
+}
+
+.team-wrapper>div {
+    margin-bottom: 0 !important;
+}
+
+.team,
+.sponsors {
+    margin: 0;
+    padding: 0;
+}
+
+.team {
+    
+    li {
+        list-style: none;
+        font-weight: 600;
+        border-left: 4px solid #eee;
+        padding-left: 1rem;
+    }
+
+    li .uri-role {
+        font-weight: 400;
+        font-size: 1rem;
+        color: #555;
+    }
+
+    li .tedx-role {
+        display: block;
+        font-size: 0.9rem;
+        color: #62a4bc;
+        text-transform: uppercase;
+    }
+    
+}
+
+.sponsors li {
+    text-align: center;
+    list-style: none;
+    font-weight: 600;
+    font-size: 2rem;
+}

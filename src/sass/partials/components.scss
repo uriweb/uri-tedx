@@ -1,0 +1,69 @@
+/* ==============================
+   COMPONENT LIBRARY
+   ============================== */
+
+    
+.cl-card h2,
+.cl-card h3 {
+    font-weight: 600 !important;
+}
+
+.cl-card p {
+    font-size: 1rem !important;
+}
+
+.cl-card .cl-button,
+.cl-card .cl-button {
+    color: #555 !important;
+}
+
+.cl-card:hover .cl-button,
+.cl-card:focus .cl-button {
+    background: $tedred !important;
+    border-top: 1px solid $tedred !important;
+    color: #fff !important;
+}
+
+
+a.cl-button,
+span.cl-button {
+    
+    display: inline-block;
+	width: initial;
+    line-height: 2rem;
+    font-size: .8rem;
+	font-weight: 600;
+    border-radius: 3px;
+    padding: 0 .7rem;
+    color: #fff;
+    border: none;
+	text-transform: none;
+	letter-spacing: inherit;
+   	background: $tedred;
+	
+	&:hover,
+    &:focus {
+        border: none;
+        color: #fff;
+		background: $tedred;
+        box-shadow: 0 .1rem .3rem rgba(0,0,0,.5);
+    }
+	
+	&.disabled {
+		color: #999;
+    	border: 1px solid #bbb;
+		
+		&:hover,
+		&:focus {
+			border: 1px solid #666;
+			color: #555;
+		}
+		
+	}
+	
+	&.light {
+		color: #555;
+		background: #fff;
+	}
+    
+}

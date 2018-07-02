@@ -1,0 +1,240 @@
+/* ==============================
+   WATCH
+   ============================== */
+
+
+.live-event-tickets {
+    
+    background: #f3f3f3;
+    border-radius: .2rem;
+    overflow: hidden;
+    font-size: 1rem;
+
+    p:empty {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 1rem 1rem;
+        margin-bottom: 0;
+        color: #fff;
+        max-width: 100%;
+    }
+
+    &:nth-child(1) h1 {
+        background: linear-gradient(45deg, $tedred, #ee5705);
+    }
+
+    &:nth-child(2) h1 {
+        background: linear-gradient(45deg, #a50680, #4306a5);
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+        margin: 0;
+        padding: .5rem 0;
+    }
+
+}
+
+.ticket-list {
+    
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #fff;
+    color: #000;
+
+    li:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .ticket-price {
+        float: right;
+        font-weight: 600;
+    }
+
+}
+
+.ticket-benefits {
+    
+    padding: 1.5rem 1rem 0;
+
+    p:nth-of-type(1) {
+        font-weight: 600;
+        padding-bottom: 0;
+    }
+
+    ul {
+        padding-left: 5%;
+    }
+
+    li:not(:first-child) {
+        border-top: 1px solid #ddd;
+    }
+
+    p:nth-of-type(2) {
+        margin-top: 1rem;
+        font-size: .9rem;
+        color: #999;
+    }
+
+}
+
+/* DISABLED TICKET BUTTONS */
+
+.live-event-tickets a.cl-button {
+    
+    max-width: 100%;
+    width: 100%;
+    border: none !important;
+    color: #999 !important;
+    background: #ddd;
+    transition: none;
+
+    &:hover,
+    &:focus {
+        cursor: default;
+        background: #ddd !important;
+        color: #999 !important;
+    }
+
+}
+
+/* LIVE TICKET BUTTONS -- 1.23.18 @ 12pm */
+
+.live-event-tickets a.cl-button.live {
+    max-width: 100%;
+    width: 100%;
+    border: none !important;
+    color: #fff !important;
+    background: #555;
+    transition: none;
+}
+
+.live-event-tickets:nth-child(1) a.cl-button.live:hover {
+    background: linear-gradient(45deg, $tedred, #ee5705) !important;
+    cursor: pointer;
+    color: #fff !important;
+}
+
+.live-event-tickets:nth-child(2) a.cl-button.live:hover {
+    background: linear-gradient(45deg, #a50680, #4306a5) !important;
+    cursor: pointer;
+    color: #fff !important;
+}
+
+#program-wrapper {
+    
+    padding: 1vw 3.5vw;
+    background: #222;
+    border-radius: .5rem;
+
+    h1 {
+        color: #fff;
+    }
+
+    .cl-tiles>div {
+        margin-bottom: 0;
+    }
+    
+}
+
+ul.program {
+    
+    padding: 0;
+    margin: 0 0 2rem;
+
+    li {
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+
+    li p {
+        padding: 0;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    li p:first-child {
+        color: #fff;
+    }
+
+    li p:last-child {
+        font-weight: bold;
+        color: #999;
+        font-size: 1.1rem;
+    }
+
+    li.break {
+        
+        padding: 1rem 0;
+    
+        p:nth-child(1) {
+            font-weight: bold;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        p:nth-child(2) {
+            color: #999;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        
+    }
+
+    li.video {
+        
+        margin: 1.5rem 0;
+        padding: .5rem 0 .5rem 2rem;
+        border-top: 1px solid #555;
+        border-bottom: 1px solid #555;
+        font-size: .9rem;
+        background-image: url('images/video.png');
+        background-size: 18px auto;
+        background-repeat: no-repeat;
+        background-position: left .7rem;
+
+        p:last-child {
+            font-size: .9rem;
+        }
+
+        span {
+            color: $tedred;
+        }
+        
+    }
+    
+}
+
+#speaker-videos {
+    
+    .cl-card {
+        background: #222;
+        
+        h3 {
+            color: #fff;
+            margin-bottom: 0;
+        }
+        
+        p {
+            color: $tedred;
+            font-size: 1.5rem !important;
+            line-height: 1.2;
+        }
+        
+        .cl-button {
+            border-top: 1px solid #444;
+            color: #fff !important;
+        }
+        
+    }
+    
+}

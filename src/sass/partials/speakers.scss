@@ -1,0 +1,79 @@
+/* ==============================
+   SPEAKERS
+   ============================== */
+
+
+section.block {
+    
+	padding: 0;
+	margin-top: 1px;
+	display: block;
+	width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: .5rem;
+        color: rgba(255,255,255,.7);
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    p {
+        max-width: 500px;
+        color: rgba(255,255,255,.7);
+    }
+
+    &>div:first-child {
+        order: 1;
+        flex-basis: 60%;
+        background-color: #000;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        min-height: 400px;
+    }
+
+    &>div:first-child:after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+
+    &.reverse>div:first-child {
+        order: 2;
+    }
+
+    &>div:last-child {
+        order: 2;
+        background: linear-gradient(to bottom, #eee, #fff);
+        box-sizing: border-box;
+        flex-basis: 40%;
+        padding: 10vw 5vw;
+    }
+
+    &.reverse>div:last-child {
+        order: 1;
+    }
+    
+}
+
+@media screen and (min-width: 800px) {
+	section.block {
+        
+		display: flex;
+        
+        &>div:first-child,
+        &>div:last-child {
+            min-height: 500px;
+        }
+        
+    }
+}

@@ -1,0 +1,85 @@
+/* ==============================
+   ARCHIVES
+   ============================== */
+
+
+body.post-type-archive-talk {
+    
+    .site-main>div figure {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .talk-archive {
+        
+        background: #222;
+        
+        .talk-speaker {
+            font-size: 1rem;
+            color: $tedred;
+            font-weight: 600;
+        }
+        
+        .talk-event {
+            font-weight: 400;
+            color: #888;
+        }
+        
+        h3 {
+            color: #fff;
+        }
+        
+    }
+    
+    .posts-navigation {
+        margin: 2rem 0;
+        padding: 2rem 0;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        font-size: 1rem;
+    }
+    
+    .nav-links>div a {
+        background: $tedred;
+        padding: .5rem 1rem;
+        border-radius: .3rem;
+        color: #fff;
+        position: relative;
+    }
+    
+    .nav-links .nav-previous a:before,
+    .nav-links .nav-next a:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: calc(50% - 7px);
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+    }
+    
+    .nav-links .nav-previous a {
+        padding-left: 30px;
+    }
+    
+    .nav-links .nav-previous a:before {
+        left: 8px;
+        border-right: 12px solid #fff;
+    }
+    
+    .nav-links .nav-next a {
+        padding-right: 30px;
+    }
+    
+    .nav-links .nav-next a:after {
+        right: 8px;
+        border-left: 12px solid #fff;
+    }
+    
+    .nav-links>div:before,
+    .nav-links>div:after {
+        display: none;
+    }
+    
+}
