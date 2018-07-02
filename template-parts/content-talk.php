@@ -57,15 +57,15 @@
 					 */
 					$key = 'AIzaSyC-6FV_g5x8dSIBNHW3kEh3VP8lu9qnb2c';
 					$vid = get_field( 'ytid' );
-					$JSON = file_get_contents( 'https://www.googleapis.com/youtube/v3/videos?part=statistics&id=' . $vid . '&key=' . $key );
-					$json_data = json_decode( $JSON, true );
+					$json = file_get_contents( 'https://www.googleapis.com/youtube/v3/videos?part=statistics&id=' . $vid . '&key=' . $key );
+					$json_data = json_decode( $json, true );
 
 					$views = $json_data['items'][0]['statistics']['viewCount'];
 					$likes = $json_data['items'][0]['statistics']['likeCount'];
 
 					/* View Count */
 					if ( $views ) {
-						$view_label = $views == 1 ? 'view' : 'views';
+						$view_label = 1 == $views 1 ? 'view' : 'views';
 						echo '<span class="yt-stat yt-views"><strong>' . number_format( $views ) . '</strong> ' . $view_label . '</span>';
 					}
 

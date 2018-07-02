@@ -5,6 +5,9 @@
  * @package uri-tedx
  */
 
+/**
+ * Create the talk post type
+ */
 function uri_tedx_create_talk_post_type() {
 register_post_type(
 	   'talk',
@@ -42,6 +45,10 @@ register_post_type(
 }
 add_action( 'init', 'uri_tedx_create_talk_post_type' );
 
+
+/**
+ * Add the talk post type custom fields
+ */
 if ( function_exists( 'register_field_group' ) ) {
 	register_field_group(
 		array(
