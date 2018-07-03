@@ -36,7 +36,7 @@ function onYouTubePlayerAPIReady() {
 
 		var player;
 		player = new YT.Player(
-			'teaser', {
+			'hero-player', {
 				playerVars: {
 					autoplay: 0,
 					controls: 1,
@@ -57,21 +57,16 @@ function onYouTubePlayerAPIReady() {
 	 * Fire when player is ready
 	 */
 	function onTeaserReady( event ) {
-		var button1, button2, tw, exit;
+		var button, tw, exit;
 
-		tw = document.getElementById( 'teaser-wrapper' );
+		tw = document.getElementById( 'hero-player-wrapper' );
 
-		button1 = document.querySelector( '#play-teaser span' );
-		if ( null !== button1 ) {
-			button1.addEventListener( 'click', activateTeaser.bind( null, tw, event ) );
+		button = document.querySelector( '#hero-player-start a' );
+		if ( null !== button ) {
+			button.addEventListener( 'click', activateTeaser.bind( null, tw, event ) );
 		}
 
-		button2 = document.querySelector( '#play-yt a' );
-		if ( null !== button2 ) {
-			button2.addEventListener( 'click', activateTeaser.bind( null, tw, event ) );
-		}
-
-		exit = document.getElementById( 'teaser-exit' );
+		exit = document.getElementById( 'hero-player-exit' );
 		exit.addEventListener(
 			'click', function( e ) {
 				e.stopPropagation();
