@@ -1,0 +1,90 @@
+/* ==============================
+   TEDxURI 2018
+
+   PROGRAM
+   ============================== */
+
+
+#program-wrapper {
+    
+    padding: 1vw 3.5vw;
+    background: #222;
+    border-radius: .5rem;
+
+    h1 {
+        color: #fff;
+    }
+
+    .cl-tiles>div {
+        margin-bottom: 0;
+    }
+    
+}
+
+ul.program {
+    
+    padding: 0;
+    margin: 0 0 2rem;
+
+    li {
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+
+    li p {
+        padding: 0;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    li p:first-child {
+        color: #fff;
+    }
+
+    li p:last-child {
+        font-weight: bold;
+        color: #999;
+        font-size: 1.1rem;
+    }
+
+    li.break {
+        
+        padding: 1rem 0;
+    
+        p:nth-child(1) {
+            font-weight: bold;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        p:nth-child(2) {
+            color: #999;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        
+    }
+
+    li.video {
+        
+        margin: 1.5rem 0;
+        padding: .5rem 0 .5rem 2rem;
+        border-top: 1px solid #555;
+        border-bottom: 1px solid #555;
+        font-size: .9rem;
+        background-image: url('images/video.png');
+        background-size: 18px auto;
+        background-repeat: no-repeat;
+        background-position: left .7rem;
+
+        p:last-child {
+            font-size: .9rem;
+        }
+
+        span {
+            color: $tedred;
+        }
+        
+    }
+    
+}

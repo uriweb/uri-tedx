@@ -1,13 +1,13 @@
 /* ==============================
-   JOIN US
+   HOMEPAGE
    ============================== */
 
 
-section#join-us {
+#engagement {
     
     background: #fff;
     text-align: center;
-    padding: 3rem 0 0;
+    padding-top: 3rem;
 
     h1 {
         width: 100%;
@@ -79,44 +79,38 @@ section#join-us {
     div:nth-of-type(2) {
         padding: 2rem 0;
     }
+	
+	.hashtag {
+		margin-top: .5rem;
+	}
+	
+	.engagement-actions {
+		
+		&>div {
+			display: inline-block;
+		}
+		
+		.cl-button {
+			margin: 0 .5rem;
+		}
+		
+	}
     
 }
 
-
-.hashtag {
-    display: inline-block;
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding-left: 22px; 
-    color: #555;
-    background-image: url(images/twitter.png);
-    background-position: left center;
-    background-size: auto 14px;
-    background-repeat: no-repeat;
-    margin-top: .5rem;
-    width: auto;
-}
-
 @media screen and (min-width: 375px) {
-    section#join-us {
+    #engagement {
         h1 {
             font-size: 2.2rem;
         }
         
         img {
             margin-left: 20px;
-        }
-    }
-    
-    .hashtag {
-        margin-top: 0;
-        margin-left: 2rem;
-    }
-    
-}
-
-/* WHAT IS */
-
-.what-is-cards {
-	margin-bottom: 4rem;
+		}
+		
+		.hashtag {
+			margin-top: 0;
+			margin-left: 1rem;
+		}
+	}
 }

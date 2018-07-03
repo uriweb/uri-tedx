@@ -1,9 +1,11 @@
 /* ==============================
+   TEDxURI 2018
+
    SPEAKERS
    ============================== */
 
 
-section.block {
+.speaker-block {
     
 	padding: 0;
 	margin-top: 1px;
@@ -66,7 +68,7 @@ section.block {
 }
 
 @media screen and (min-width: 800px) {
-	section.block {
+	.speaker-block {
         
 		display: flex;
         

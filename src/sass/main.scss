@@ -69,16 +69,17 @@ $maxtypewidth: 800px;
    ============================== */
 
 @import 'partials/type';
-@import 'partials/components';
 @import 'partials/layout';
 @import 'partials/brandbar';
-@import 'partials/youtube';
-@import 'partials/hero';
-@import 'partials/joinus';
-@import 'partials/speakers';
-@import 'partials/live';
+@import 'partials/oembeds';
+@import 'partials/components';
+@import 'partials/archives';
+@import 'partials/homepage';
 @import 'partials/team';
 @import 'partials/watch';
 @import 'partials/talks';
-@import 'partials/archives';
-@import 'partials/oembeds';
+
+/* 2018 */
+@import 'partials/2018/hero';
+@import 'partials/2018/speakers';
+@import 'partials/2018/program';

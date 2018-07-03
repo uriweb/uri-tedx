@@ -43,11 +43,7 @@ body {
     margin-left: -50vw !important;
 }
 
-section {
-    padding: 4rem 0;
-}
-
-section.next-promo {
+.next-promo {
     
     padding: 0;
 
@@ -87,6 +83,10 @@ section.next-promo {
         border-left: 1.5rem solid #fff;
     }
 
+}
+
+.content-block {
+	padding: 4rem 0;
 }
 
 .entry-header {
