@@ -1,7 +1,7 @@
 /**
  * TEDxURI 2018 Scripts
  *
- * @package: uri-tedx
+ * @package uri-tedx
  */
 
 // Create this in the global scope so the YouTube API can call it locally.
