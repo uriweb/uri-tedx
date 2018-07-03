@@ -1,12 +1,13 @@
 # TEDxURI
 
-TEDxURI is a WordPress theme designed for the University of Rhode Island.
+TEDxURI is a WordPress theme designed for the University of Rhode Island's TEDxURI website, [uri.edu/tedx](https://www.uri.edu/tedx).
 
 ## How do I get set up?
 
-1. Install into your WordPress wp-content/themes directory
-2. Activate it as your site's theme
-3. Configure it with Customizer
+1. Grab a copy of the [latest version](https://github.com/uriweb/uri-tedx/releases/latest)
+2. Install it into your WordPress `wp-content/themes` directory
+3. Activate it as your site's theme
+4. Configure it with Customizer
 
 ## Theme details
 
