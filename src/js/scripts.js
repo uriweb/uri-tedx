@@ -1,5 +1,5 @@
 /**
- * TEDxURI 2018 Scripts
+ * TEDxURI Scripts
  *
  * @package uri-tedx
  */

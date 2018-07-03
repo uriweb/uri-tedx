@@ -2,6 +2,8 @@
 
 TEDxURI is a WordPress theme designed for the University of Rhode Island's TEDxURI website, [uri.edu/tedx](https://www.uri.edu/tedx).
 
+It is designed to be evergreen, and replaces the [uri-tedx-2018](https://github.com/uriweb/uri-tedx-2018) annual theme.
+
 ## How do I get set up?
 
 1. Grab a copy of the [latest version](https://github.com/uriweb/uri-tedx/releases/latest)
@@ -20,4 +22,4 @@ Contributors: Brandon Fuller
 Tags: themes  
 Requires at least: 4.0  
 Tested up to: 4.9  
-Stable tag: 0.1.0  
+Stable tag: 1.0.0  
