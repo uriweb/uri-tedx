@@ -65,7 +65,7 @@
 
 					/* View Count */
 					if ( $views ) {
-						$view_label = 1 == $views 1 ? 'view' : 'views';
+						$view_label = 1 == $views ? 'view' : 'views';
 						echo '<span class="yt-stat yt-views"><strong>' . number_format( $views ) . '</strong> ' . $view_label . '</span>';
 					}
 
@@ -111,7 +111,7 @@
 			<?php } ?>
 			</section>
 
-			<section class="next-promo breakout"><a href="https://www.uri.edu/tedx/watch/">Browse all our talks</a></section>
+			<div class="next-promo breakout"><a href="https://www.uri.edu/tedx/watch/">Browse all our talks</a></div>
 
 		</div><!-- .entry-content -->
 
