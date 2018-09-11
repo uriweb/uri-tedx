@@ -10,11 +10,10 @@
 
 #brandbar {
     
-    background: #fff;
+	background: #fff;
     border-bottom: 1px solid #eee;
 	width: 100%;
     padding: 0;
-    background: $white;
     position: relative;
     z-index: 9990;
 
@@ -112,7 +111,7 @@
 
 body.ln-about #ln-about,
 body.ln-speakers #ln-speakers,
-body.ln-watch #ln-watch,
+body.ln-attend #ln-attend,
 body.ln-team #ln-team {
     a {
         color: $tedred;
