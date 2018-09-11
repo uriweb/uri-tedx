@@ -111,7 +111,7 @@
 			<?php } ?>
 			</section>
 
-			<div class="next-promo breakout"><a href="https://www.uri.edu/tedx/watch/">Browse all our talks</a></div>
+			<div class="next-promo breakout"><a href="https://www.uri.edu/tedx/talks/">Browse all our talks</a></div>
 
 		</div><!-- .entry-content -->
 

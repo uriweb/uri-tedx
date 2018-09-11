@@ -86,14 +86,14 @@
 
     li {
         list-style: none;
-        text-transform: uppercase;
+        //text-transform: uppercase;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-bottom: 0;
     }
 
     a {
-		color: #555;
+		color: #000;
         display: block;
         padding: 1rem .8rem;
     }
@@ -109,6 +109,8 @@
     
 }
 
+body.post-type-archive-talk #ln-talks,
+body.single-talk #ln-talks,
 body.ln-about #ln-about,
 body.ln-speakers #ln-speakers,
 body.ln-attend #ln-attend,
@@ -142,9 +144,9 @@ body.ln-team #ln-team {
             display: inline-block;
             list-style: none;
             color: #555;
-            text-transform: uppercase;
+            //text-transform: uppercase;
             font-weight: 600;
-            font-size: .8rem;
+            //font-size: .8rem;
             line-height: 35px;
             transition: all .2s ease-in-out;
         }
@@ -178,7 +180,7 @@ body.ln-team #ln-team {
     
         li {
             line-height: 40px;
-            font-size: .9rem;
+            //font-size: .9rem;
         }
         
     }
