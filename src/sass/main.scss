@@ -71,6 +71,7 @@ $maxtypewidth: 800px;
 @import 'partials/type';
 @import 'partials/layout';
 @import 'partials/brandbar';
+@import 'partials/footer';
 @import 'partials/oembeds';
 @import 'partials/components';
 @import 'partials/archives';
@@ -79,6 +80,10 @@ $maxtypewidth: 800px;
 @import 'partials/watch';
 @import 'partials/talks';
 
+/* 2019 */
+@import 'partials/2019/type';
+@import 'partials/2019/hero';
+	
 /* 2018 */
 @import 'partials/2018/hero';
 @import 'partials/2018/speakers';

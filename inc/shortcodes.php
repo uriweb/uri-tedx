@@ -14,13 +14,16 @@
 function uri_tedx_shortcode_gn( $atts, $content = null ) {
 
 	// Attributes.
-	$atts = shortcode_atts(
+	extract(
+		shortcode_atts(
 			array(
 				'style' => '',
-			), $atts
-		);
+			),
+			$atts
+		)
+	);
 
-	$output = '<div class="globalnav breakout ' . $atts['style'] . '">';
+	$output = '<div class="globalnav breakout ' . $style . '">';
 
 	ob_start();
 	get_template_part( 'header-parts/globalnav' );
