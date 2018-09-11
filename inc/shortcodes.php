@@ -18,7 +18,8 @@ function uri_tedx_shortcode_gn( $atts, $content = null ) {
 		shortcode_atts(
 			array(
 				'style' => '',
-			), $atts
+			),
+			$atts
 		)
 	);
 

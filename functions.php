@@ -123,7 +123,8 @@ if ( ! function_exists( 'uri_tedx_setup' ) ) :
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support(
-			'custom-background', apply_filters(
+			'custom-background',
+			apply_filters(
 				'uri_tedx_custom_background_args',
 				array(
 					'default-color' => 'ffffff',
