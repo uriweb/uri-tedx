@@ -34,7 +34,8 @@ function uri_tedx_options_posts( $wp_customize ) {
 
 	// Add section for post options.
 	$wp_customize->add_section(
-		'uri_tedx_customizer_posts', array(
+		'uri_tedx_customizer_posts',
+		array(
 			'title'    => __( 'Post Options', 'uri' ),
 			'priority' => 70,
 		)
@@ -42,7 +43,8 @@ function uri_tedx_options_posts( $wp_customize ) {
 
 	/* Display categories */
 	$wp_customize->add_setting(
-		'display_post_categories', array(
+		'display_post_categories',
+		array(
 			'default'           => '',
 			'type'              => 'option',
 			'sanitize_callback' => 'uri_tedx_validate_checkbox',
@@ -64,7 +66,8 @@ function uri_tedx_options_posts( $wp_customize ) {
 
 	/* Display tags */
 	$wp_customize->add_setting(
-		'display_post_tags', array(
+		'display_post_tags',
+		array(
 			'default'           => '',
 			'type'              => 'option',
 			'sanitize_callback' => 'uri_tedx_validate_checkbox',
