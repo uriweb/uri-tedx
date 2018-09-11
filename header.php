@@ -38,7 +38,7 @@ if ( ! empty( $gtm ) ) {
 		<header id="brandbar" class="site-header" role="banner">
 				
 			<div class="content-width">
-				<a href="https://www.uri.edu/tedx/" title="TEDxURI"><img src="<?php echo get_stylesheet_directory_uri() . '/images/logo.png'; ?>" alt="TEDxURI" /></a>
+				<a href="https://www.uri.edu/tedx/" title="TEDxURI"><img src="<?php echo get_stylesheet_directory_uri() . '/images/logo_white.png'; ?>" alt="TEDxURI" /></a>
 				<input type="checkbox" id="tedx-nav-toggle" role="presentation" aria-label="Open the TEDxURI site menu when browsing on mobile">
 				<label for="tedx-nav-toggle" id="tedx-nav-label"><span>Menu</span></label>
 				<ul id="tedx-nav">
