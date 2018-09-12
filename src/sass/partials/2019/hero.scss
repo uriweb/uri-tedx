@@ -41,11 +41,6 @@
 	to		{ background: #000 }
 }
 
-@keyframes tedx2019-hero-bg-lightsup {
-	from	{ background: #000 }
-	to		{ background: #333 }
-}
-
 @keyframes tedx2019-hero-h1-change-color {
 	from	{ color: #000 }
 	to		{ color: #fff }
@@ -57,7 +52,7 @@
 .tedx2019-homepage-hero {
 	
 	position: relative;
-	background: #333;
+	background: #000;
 	padding: 10vw 0 12vw;
 
 	.tedx2019-hero-content {
@@ -149,10 +144,10 @@
 	&.animated {
 		
 		background: #fff;
-		animation-name: tedx2019-hero-bg-lightsout, tedx2019-hero-bg-lightsup;
+		animation-name: tedx2019-hero-bg-lightsout;
 		animation-fill-mode: forwards;
-		animation-delay: 3s, 5s;
-		animation-duration: 1s, 2s;
+		animation-delay: 3s;
+		animation-duration: 1s;
 		
 		.tedx2019-hero-artwork {
 			opacity: 0;
