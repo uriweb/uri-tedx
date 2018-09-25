@@ -1,5 +1,5 @@
 /*
-Theme Name: TEDxURI
+Theme Name: URI TEDx
 Theme URI: https://www.uri.edu/tedx
 Author: University of Rhode Island
 Author URI: https://today.uri.edu
