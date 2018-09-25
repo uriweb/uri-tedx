@@ -116,19 +116,22 @@
 		left: 16%;
 		margin-top: 9vw;
 		
-		a {
-			display: inline-block;
-			box-sizing: border-box;
+		a, span {
 			position: relative;
 			top: 0;
 			width: 55vw;
-			padding: .8rem 2.5rem;
-			background: linear-gradient(45deg, #00E4FF, #FF009D);
-			font-size: 1rem;
-			color: #fff;
-			font-weight: 900;
+			padding: .5rem 1.5rem;
+			font-size: .8rem;
 			text-align: center;
 			text-transform: uppercase;
+			box-sizing: border-box;
+		}
+		
+		a {
+			display: inline-block;
+			background: linear-gradient(45deg, #00E4FF, #FF009D);
+			color: #fff;
+			font-weight: 900;
 			border-radius: 2px;
 			box-shadow: 0 .3rem 1rem rgba(0,0,0,.15);
 			transition: all .1s ease-in-out;
@@ -138,6 +141,13 @@
 			top: -2px;
 			box-shadow: 0 .1rem .3rem rgba(0,0,0,.5);
 		}
+		
+		span {
+			color: #555;
+			border: 1px solid #555;
+			border-radius: 3px;
+		}
+			
 		
 	}
 	
@@ -205,8 +215,11 @@
 
 @media screen and (min-width: 600px) {
 
-	.tedx2019-homepage-hero .tedx2019-hero-call a {
+	.tedx2019-homepage-hero .tedx2019-hero-call a,
+	.tedx2019-homepage-hero .tedx2019-hero-call span {
 		width: initial;
+		font-size: 1rem;
+		padding: .8rem 2.5rem;
 	}
 
 }
