@@ -10,11 +10,10 @@
 
 #brandbar {
     
-    background: #fff;
-    border-bottom: 1px solid #eee;
+	background: #000;
+	border-bottom: 1px solid rgba(255,255,255,.3);
 	width: 100%;
     padding: 0;
-    background: $white;
     position: relative;
     z-index: 9990;
 
@@ -77,24 +76,24 @@
     
     display: none;
     position: absolute;
-    top: calc(100% + 2px);
+    top: calc(100% + 1px);
     right: 0;
     width: 100%;
     box-sizing: border-box;
     background: #fff;
     box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
     z-index: 999;
+	margin: 0;
 
     li {
         list-style: none;
-        text-transform: uppercase;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-bottom: 0;
     }
 
     a {
-		color: #555;
+		color: #333;
         display: block;
         padding: 1rem .8rem;
     }
@@ -110,10 +109,11 @@
     
 }
 
+body.post-type-archive-talk #ln-talks,
+body.single-talk #ln-talks,
 body.ln-about #ln-about,
 body.ln-speakers #ln-speakers,
-body.ln-watch #ln-watch,
-body.ln-team #ln-team {
+body.ln-attend #ln-attend {
     a {
         color: $tedred;
     }
@@ -137,30 +137,29 @@ body.ln-team #ln-team {
         display: block;
         height: 35px;
         line-height: 35px;
+		background: transparent;
         transition: height .2s ease-in-out, line-height .2s ease-in-out;
 
         li {
             display: inline-block;
             list-style: none;
-            color: #555;
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: .8rem;
             line-height: 35px;
             transition: all .2s ease-in-out;
         }
 
         li:not(:first-child) {
-            margin-left: 2.5rem;
+            margin-left: 3rem;
         }
 
         a {
+			color: #fff;
             padding: 0;
         }
 
         a:hover,
         a:hover {
             background: transparent;
+			color: $tedred;
         }
         
     }
@@ -179,7 +178,7 @@ body.ln-team #ln-team {
     
         li {
             line-height: 40px;
-            font-size: .9rem;
+            //font-size: .9rem;
         }
         
     }

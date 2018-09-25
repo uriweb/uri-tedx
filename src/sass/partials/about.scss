@@ -1,5 +1,5 @@
 /* ==============================
-   TEAM
+   ABOUT
    ============================== */
 
 
@@ -41,9 +41,21 @@
     
 }
 
-.sponsors li {
-    text-align: center;
-    list-style: none;
+.sponsors h3 {
+	font-size: 1.5rem;
+	color: #000;
+}
+
+.sponsors .sub-sponsors {
+	margin-left: 0;
+	padding-left: 1rem;
+	border-left: 5px solid #eee;
+	color: #62a4bc;
+}
+
+.sponsors .sub-sponsors li {
+	list-style: none;
     font-weight: 600;
-    font-size: 2rem;
+	font-size: 1rem;
+	text-transform: uppercase;
 }

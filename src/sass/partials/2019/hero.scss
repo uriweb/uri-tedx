@@ -1,0 +1,252 @@
+/* ==============================
+   2019 HERO
+   ============================== */
+
+
+/* Define keyframes first */
+
+@keyframes tedx2019-hero-artwork-color {
+	from 	{ filter: saturate(0) invert(100%); opacity: 0; }
+	to		{ filter: saturate(100%) invert(0); opacity: 1; }
+}
+
+@keyframes tedx2019-hero-artwork-transform {
+	from 	{ transform: translate(-10%, 0); }
+	to		{ transform: translate(0, 0); }
+}
+
+@keyframes tedx2019-hero-shift-left {
+	from 	{ transform: translate(-2%, 0); }
+	to		{ transform: translate(0, 0); }
+}
+
+@keyframes tedx2019-hero-shift-up {
+	from 	{ transform: translate(0, 10%); }
+	to		{ transform: translate(0, 0); }
+}
+
+@keyframes tedx2019-hero-strobe {
+	0%		{ opacity: 0 }
+	50%		{ opacity: 1 }
+	100%	{ opacity: 0 }
+}
+
+@keyframes tedx2019-hero-fadein {
+	from	{ opacity: 0 }
+	to		{ opacity: 1 }
+}
+
+@keyframes tedx2019-hero-bg-lightsout {
+	from	{ background: #fff }
+	to		{ background: #000 }
+}
+
+@keyframes tedx2019-hero-h1-change-color {
+	from	{ color: #000 }
+	to		{ color: #fff }
+}
+
+
+/* The hero */
+
+.tedx2019-homepage-hero {
+	
+	position: relative;
+	background: #000;
+	padding: 10vw 0 12vw;
+
+	.tedx2019-hero-content {
+		position: relative;
+	}
+
+	.tedx2019-hero-artwork {
+		
+		position: absolute;
+		width: 52.5vw;
+		z-index: 1;
+		top: 19.5%;
+		left: 38%;
+		transform-origin: 0 50%;
+		
+		img {
+			width: 100%;
+			height: auto;
+		}
+		
+	}
+
+	.tedx2019-hero-h1 {
+		
+		position: relative;
+		left: 16%;
+		z-index: 10;
+		font-weight: 900;
+		font-size: 16vw;
+		color: #fff;
+		margin-bottom: 6%;
+		
+		span {
+			display: block;
+		}
+		
+		.tedx2019-hero-h1-it {
+			color: #00E4FF;
+			line-height: 84%;
+		}
+		
+		.tedx2019-hero-h1-up {
+			color: #FF009D;
+			line-height: 69%;
+		}
+		
+	}
+
+	.tedx2019-hero-h2 {
+		position: relative;
+		left: 16%;
+		z-index: 10;
+		font-size: 6.2vw;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	.tedx2019-hero-call {
+		
+		position: relative;
+		left: 16%;
+		margin-top: 9vw;
+		
+		a, span {
+			position: relative;
+			top: 0;
+			width: 55vw;
+			padding: .5rem 1.5rem;
+			font-size: .8rem;
+			text-align: center;
+			text-transform: uppercase;
+			box-sizing: border-box;
+		}
+		
+		a {
+			display: inline-block;
+			background: linear-gradient(45deg, #00E4FF, #FF009D);
+			color: #fff;
+			font-weight: 900;
+			border-radius: 2px;
+			box-shadow: 0 .3rem 1rem rgba(0,0,0,.15);
+			transition: all .1s ease-in-out;
+		}
+
+		a:hover {
+			top: -2px;
+			box-shadow: 0 .1rem .3rem rgba(0,0,0,.5);
+		}
+		
+		span {
+			color: #555;
+			border: 1px solid #555;
+			border-radius: 3px;
+		}
+			
+		
+	}
+	
+	&.animated {
+		
+		background: #fff;
+		animation-name: tedx2019-hero-bg-lightsout;
+		animation-fill-mode: forwards;
+		animation-delay: 3s;
+		animation-duration: 1s;
+		
+		.tedx2019-hero-artwork {
+			opacity: 0;
+			animation-name: tedx2019-hero-artwork-transform, tedx2019-hero-artwork-color;
+			animation-timing-function: ease-in-out, cubic-bezier(0.95, 0.05, 0.795, 0.035);
+			animation-fill-mode: forwards;
+			animation-delay: 1s, .5s;
+			animation-duration: 3s, 5s;
+		}
+		
+		.tedx2019-hero-h1-change {
+			opacity: 0;
+			color: #000;
+			animation-name: tedx2019-hero-shift-left, tedx2019-hero-strobe, tedx2019-hero-h1-change-color, tedx2019-hero-fadein, tedx2019-hero-shift-up;
+			animation-fill-mode: forwards;
+			animation-delay: .5s, .5s, 3s, 5s, 5s;
+			animation-duration: 1s, 1s, 0s, 2s, 2s;
+		}
+		
+		.tedx2019-hero-h1-it,
+		.tedx2019-hero-h1-up {
+			opacity: 0;
+			animation-name: tedx2019-hero-shift-left, tedx2019-hero-strobe, tedx2019-hero-fadein, tedx2019-hero-shift-up;
+			animation-fill-mode: forwards;
+			animation-duration: 1s, 1s, 2s, 2s;
+		}
+		
+		.tedx2019-hero-h1-it {
+			animation-delay: 1.5s, 1.5s, 5s, 5s;
+		}
+		
+		.tedx2019-hero-h1-up {
+			animation-delay: 2.5s, 2.5s, 5s, 5s;
+		}
+
+		.tedx2019-hero-h2 {
+			opacity: 0;
+			animation-name: tedx2019-hero-fadein, tedx2019-hero-shift-up;
+			animation-delay: 6.2s;
+			animation-fill-mode: forwards;
+			animation-duration: 2s;
+		}
+		
+		.tedx2019-hero-call {
+			opacity: 0;
+			animation-name: tedx2019-hero-fadein, tedx2019-hero-shift-up;
+			animation-delay: 6.4s;
+			animation-fill-mode: forwards;
+			animation-duration: 2s;
+		}
+		
+	}
+	
+}
+
+@media screen and (min-width: 600px) {
+
+	.tedx2019-homepage-hero .tedx2019-hero-call a,
+	.tedx2019-homepage-hero .tedx2019-hero-call span {
+		width: initial;
+		font-size: 1rem;
+		padding: .8rem 2.5rem;
+	}
+
+}
+
+@media screen and (min-width: 1000px) {
+
+	.tedx2019-homepage-hero {
+		
+		padding: 9% 0;
+		
+		.tedx2019-hero-artwork {
+			width: 33rem;
+			top: 9rem;
+		}
+
+		.tedx2019-hero-h1 {
+			font-size: 10rem;
+		}
+
+		.tedx2019-hero-h2 {
+			font-size: 4rem;
+		}
+
+		.tedx2019-hero-call {
+			margin-top: 4rem;
+		}
+		
+	}
+
+}

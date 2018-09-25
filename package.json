@@ -1,8 +1,8 @@
 {
   "name": "uri-tedx",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The WordPress theme for TEDxURI",
-  "themeName": "TEDxURI",
+  "themeName": "URI TEDx",
   "textDomain": "uri",
   "main": "index.php",
   "homepage": "https://www.uri.edu/tedx",

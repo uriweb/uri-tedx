@@ -111,7 +111,8 @@ if ( ! function_exists( 'uri_tedx_setup' ) ) :
 		 * to output valid HTML5.
 		 */
 		add_theme_support(
-			'html5', array(
+			'html5',
+			array(
 				'search-form',
 				'comment-form',
 				'comment-list',
@@ -122,8 +123,10 @@ if ( ! function_exists( 'uri_tedx_setup' ) ) :
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support(
-			'custom-background', apply_filters(
-				'uri_tedx_custom_background_args', array(
+			'custom-background',
+			apply_filters(
+				'uri_tedx_custom_background_args',
+				array(
 					'default-color' => 'ffffff',
 					'default-image' => '',
 				)
@@ -135,7 +138,8 @@ if ( ! function_exists( 'uri_tedx_setup' ) ) :
 
 		// Add theme support for post formats
 		add_theme_support(
-			'post-formats', array(
+			'post-formats',
+			array(
 				'video',
 			)
 		);
@@ -150,15 +154,16 @@ add_action( 'after_setup_theme', 'uri_tedx_setup' );
  */
 function uri_tedx_custom_sizes( $sizes ) {
 	return array_merge(
-		 $sizes, array(
-			 'thumbnail@2x' => __( 'Thumbnail @2x' ),
-			 'third_column' => __( 'Third Column' ),
-			 'half_column' => __( 'Half Column' ),
-			 'full_column' => __( 'Full Column' ),
-			 'hero' => __( 'Hero' ),
-			 'full_column@2x' => __( 'Full Column @2x' ),
-			 'hero@2x' => __( 'Hero @2x' ),
-		 )
+		 $sizes,
+		array(
+			'thumbnail@2x' => __( 'Thumbnail @2x' ),
+			'third_column' => __( 'Third Column' ),
+			'half_column' => __( 'Half Column' ),
+			'full_column' => __( 'Full Column' ),
+			'hero' => __( 'Hero' ),
+			'full_column@2x' => __( 'Full Column @2x' ),
+			'hero@2x' => __( 'Hero @2x' ),
+		)
 		);
 }
 add_filter( 'image_size_names_choose', 'uri_tedx_custom_sizes' );
@@ -452,11 +457,6 @@ require get_template_directory() . '/inc/customizer.php';
  * Layout options
  */
 require get_template_directory() . '/inc/layout-options.php';
-
-/**
- * Shortcodes additions.
- */
-require get_template_directory() . '/inc/shortcodes.php';
 
 /**
  * Load Jetpack compatibility file.

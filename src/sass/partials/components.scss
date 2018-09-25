@@ -5,26 +5,36 @@
     
 .cl-card {
 	
-	h2,
+	border-radius: .3rem .3rem 0 0;
+	
 	h3 {
-		font-weight: 600 !important;
+		font-weight: 600;
+		font-size: 1.8rem;
 	}
 
 	p {
-		font-size: 1rem !important;
+		font-size: 1rem;
+	}
+	
+	img {
+		border-radius: .3rem .3rem 0 0;
 	}
 
 	.cl-button {
-		color: #555 !important;
+		color: #555;
 	}
 
 	&:hover .cl-button,
 	&:focus .cl-button {
-		background: $tedred !important;
-		border-top: 1px solid $tedred !important;
-		color: #fff !important;
+		background: $tedred;
+		border-top: 1px solid $tedred;
+		color: #fff;
 	}
 	
+}
+
+.cl-hero {
+	background: #000;
 }
 
 
