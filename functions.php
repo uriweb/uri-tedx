@@ -424,6 +424,22 @@ function uri_tedx_sanitize_title( $t ) {
 
 
 /**
+ * Wrapper for Advanced Custom Fields get_field()
+ */
+function uri_tedx_get_field() {
+
+	$r = false;
+
+	if ( function_exists( 'get_field' ) ) {
+		$r = call_user_func_array( 'get_field', func_get_args() );
+	}
+
+	return $r;
+
+}
+
+
+/**
  * Enable shortcodes in text widgets
  */
 add_filter( 'widget_text', 'do_shortcode' );
