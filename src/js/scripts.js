@@ -36,7 +36,8 @@ function onYouTubePlayerAPIReady() {
 
 		var player;
 		player = new YT.Player(
-			'hero-player', {
+			'hero-player',
+			{
 				playerVars: {
 					autoplay: 0,
 					controls: 1,
@@ -68,7 +69,8 @@ function onYouTubePlayerAPIReady() {
 
 		exit = document.getElementById( 'hero-player-exit' );
 		exit.addEventListener(
-			'click', function( e ) {
+			'click',
+			function( e ) {
 				e.stopPropagation();
 				exitTeaser( tw, event );
 			}
