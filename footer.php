@@ -30,7 +30,7 @@
 					if ( function_exists( 'uri_cl_shortcode_social' ) ) {
 						$facebook  = 'https://www.facebook.com/TEDxURI';
 						$twitter   = 'https://twitter.com/TEDxURI';
-						$youtube   = 'https://www.youtube.com/user/TEDxURI';
+						$youtube   = 'https://www.youtube.com/channel/UCbhjVxILP8IBOVKsbo7kbnQ';
 						echo do_shortcode( '[cl-social style="light" facebook="' . $facebook . '" twitter="' . $twitter . '" youtube="' . $youtube . '"]' );
 					}
 					?>
