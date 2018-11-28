@@ -230,7 +230,7 @@ function uri_tedx_open_graph() {
 
 		$image_thumb = $image[0];
 		if ( empty( $image_thumb ) ) {
-			$image_thumb  = get_template_directory_uri() . '/images/logo-wordmark.png';
+			$image_thumb  = get_template_directory_uri() . '/images/logo_open_graph.jpg';
 			$summary_type = 'summary_large_image';
 		}
 
@@ -256,8 +256,8 @@ function uri_tedx_open_graph() {
 		?>
 <meta name="description" content="<?php echo $excerpt; ?>" />
 <meta name="twitter:card" content="<?php echo $summary_type; ?>" />
-<meta name="twitter:site" content="@universityofri" />
-<meta name="twitter:creator" content="@universityofri" />
+<meta name="twitter:site" content="@tedxuri" />
+<meta name="twitter:creator" content="@tedxuri" />
 <meta property="og:url" content="<?php echo get_permalink(); ?>" />
 <meta property="og:title" content="<?php echo $title; ?>" />
 <meta property="og:description" content="<?php echo $excerpt; ?>" />
