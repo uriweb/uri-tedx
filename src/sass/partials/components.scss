@@ -78,5 +78,23 @@ span.cl-button {
 		color: #555;
 		background: #fff;
 	}
+	
+	&.forward {
+		position: relative;
+		padding-right: 30px;
+	}
+
+	&.forward:after {
+		position: absolute;
+		display: block;
+		content: '';
+		width: 0;
+		height: 0;
+		top: calc(50% - 3px);
+		right: 12px;
+		border-top: 4px solid transparent;
+		border-bottom: 4px solid transparent;
+		border-left: 8px solid #fff;
+	}
     
 }

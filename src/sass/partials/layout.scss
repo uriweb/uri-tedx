@@ -93,6 +93,20 @@ body {
 	padding: 4rem 0 2rem;
 }
 
+.photo-grid .cl-tiles>div {
+	overflow: hidden;
+}
+
+.photo-grid a img {
+	transform: scale(1);
+	transition: transform .5s ease-in-out;
+}
+
+.photo-grid a:hover img {
+	transform: scale(1.1);
+	transition: transform .3s ease-in-out;
+}
+
 
 /* SCREEN READERS */
 
