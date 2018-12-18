@@ -49,11 +49,6 @@
 		text-transform: lowercase;
     }
 
-    p {
-        max-width: 500px;
-		color: #000;
-    }
-
     &>div:first-child {
         order: 1;
         flex-basis: 50%;
@@ -79,6 +74,8 @@
         flex-basis: 50%;
         padding: 7vw 5vw;
 		height: 100vw;
+		overflow: hidden;
+		position: relative;
     }
 
     &.reverse>div:last-child {
@@ -107,7 +104,7 @@
 			
 			background-color: #000;
 			
-			h1, h2, p {
+			h1, h2 {
 				color: #fff;
 			}
 			
@@ -137,8 +134,122 @@
 			background-color: #000;
 		}
 		
-		h1, h2, p {
+		h1, h2 {
 			color: #fff;
+		}
+		
+	}
+	
+	.block-slider {
+		
+		background: #000;
+		padding: 2rem 5vw 3rem;
+		font-size: 1rem;
+		position: absolute;
+		left: 0;
+		bottom: -100%;
+		width: 100%;
+		box-sizing: border-box;
+		transition: bottom .2s ease-in-out;
+		
+		p {
+			max-width: 100%;
+			color: #fff;
+		}
+		
+	}
+	
+	.block-slider-trigger {
+		
+		position: absolute;
+		color: #fff;
+		z-index: 10;
+		left: 5vw;
+		bottom: 2rem;
+		font-size: .9rem;
+		padding: .5rem .8rem;
+		background: #000;
+		border-radius: 2px;
+		transition: all .2s ease-in-out;
+		
+		&:hover,
+		&:focus {
+			cursor: pointer;
+		}
+		
+		&:before {
+			display: block;
+			position: absolute;
+			content: '';
+			background: #000;
+			width: 12px;
+			height: 12px;
+			border-radius: 2px;
+			transform: rotate(45deg);
+			bottom: -5px;
+			left: calc( 50% - 6px );
+			transition: all .2s ease-in-out;
+		}
+			
+	}
+	
+	&>div:last-child.slider-open {
+		
+		.block-slider {
+			bottom: 0;
+		}
+		
+		.block-slider-trigger {
+			
+			background: #fff;
+			color: #000;
+			
+			&:before {
+				bottom: initial;
+				top: -5px;
+				background: #fff;
+			}
+			
+		}
+		
+	}
+	
+	&.blocks-pink-black,
+	&.blocks-blue-black {
+		
+		.block-slider {
+			background: #fff;
+			
+			p {
+				color: #000;
+			}
+			
+		}
+		
+		.block-slider-trigger {
+			
+			background: #fff;
+			color: #000;
+			
+			&:before {
+				background: #fff;
+			}
+			
+		}
+		
+		&>div:last-child.slider-open {
+			
+			.block-slider-trigger {
+
+				background: #000;
+				color: #fff;
+
+				&:before {
+					background: #000;
+				}
+				
+			}
+			
 		}
 		
 	}
