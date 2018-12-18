@@ -1,0 +1,169 @@
+/* ==============================
+   TEDxURI 2019
+
+   SPEAKERS
+   ============================== */
+
+.speaker-headline-2019 {
+	
+	background: #000;
+	
+	h1 {
+		color: #fff;
+		font-size: 12vw;
+		font-weight: 900;
+	}
+	
+	p {
+		color: #fff;
+	}
+	
+}
+
+.speaker-block-2019 {
+    
+	padding: 0;
+	display: block;
+	width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+	
+	h1,
+	h2 {
+		font-size: 15vw;
+		line-height: 13vw;
+		hyphens: manual;
+	}
+    
+    h1 {
+        font-weight: 900;
+        margin-bottom: .5rem;
+		color: #000;
+		text-transform: lowercase;
+    }
+
+    h2 {
+		font-weight: 100;
+		color: #000;
+		text-transform: lowercase;
+    }
+
+    p {
+        max-width: 500px;
+		color: #000;
+    }
+
+    &>div:first-child {
+        order: 1;
+        flex-basis: 50%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 100vw;
+    }
+
+    &>div:first-child:after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+
+    &.reverse>div:first-child {
+        order: 2;
+    }
+
+    &>div:last-child {
+        order: 2;
+        box-sizing: border-box;
+        flex-basis: 50%;
+        padding: 7vw 5vw;
+		height: 100vw;
+    }
+
+    &.reverse>div:last-child {
+        order: 1;
+    }
+	
+	&.blocks-pink-white {
+		
+		&>div:first-child {
+			background-color: #FF009D;
+		}
+		
+		&>div:last-child {
+			background-color: #fff;
+		}
+		
+	}
+	
+	&.blocks-pink-black {
+		
+		&>div:first-child {
+			background-color: #FF009D;
+		}
+		
+		&>div:last-child {
+			
+			background-color: #000;
+			
+			h1, h2, p {
+				color: #fff;
+			}
+			
+		}
+		
+	}
+	
+	&.blocks-blue-white {
+		
+		&>div:first-child {
+			background-color: #00E4FF;
+		}
+		
+		&>div:last-child {
+			background-color: #fff;
+		}
+		
+	}
+	
+	&.blocks-blue-black {
+		
+		&>div:first-child {
+			background-color: #00E4FF;
+		}
+		
+		&>div:last-child {
+			background-color: #000;
+		}
+		
+		h1, h2, p {
+			color: #fff;
+		}
+		
+	}
+    
+}
+
+@media screen and (min-width: 800px) {
+	.speaker-headline-2019 h1 {
+		font-size: 6rem;
+	}
+	
+	.speaker-block-2019 {
+        
+		display: flex;
+		
+		h1,
+		h2 {
+			font-size: 7vw;
+			line-height: 6vw;
+		}
+        
+        &>div:first-child,
+        &>div:last-child {
+            height: 50vw;
+        }
+        
+    }
+}
