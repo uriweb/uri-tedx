@@ -26,7 +26,7 @@
 	function handleSlider( parent, trigger ) {
 
 		var className = 'slider-open';
-		console.log('clicked');
+		console.log( 'clicked' );
 
 		if ( parent.classList.contains( className ) ) {
 			parent.classList.remove( className );

@@ -90,12 +90,12 @@
 		}
 		
 		.tedx2019-hero-h1-it {
-			color: #00E4FF;
+			color: $blue2019;
 			line-height: 84%;
 		}
 		
 		.tedx2019-hero-h1-up {
-			color: #FF009D;
+			color: $pink2019;
 			line-height: 69%;
 		}
 		
@@ -129,7 +129,7 @@
 		
 		a {
 			display: inline-block;
-			background: linear-gradient(45deg, #00E4FF, #FF009D);
+			background: linear-gradient(45deg, $blue2019, $pink2019);
 			color: #fff;
 			font-weight: 900;
 			border-radius: 2px;
