@@ -10,14 +10,15 @@
 
 	function initSpeakers() {
 
-		var els, el, parent, i;
+		var els, el, block, parent, i;
 
 		els = document.querySelectorAll( '.block-slider-trigger' );
 
 		for ( i = 0; i < els.length; i++ ) {
 
 			parent = els[i].parentElement;
-			els[i].addEventListener( 'click', handleSlider.bind( null, parent, els[i] ), false );
+			block = parent.parentElement;
+			block.addEventListener( 'click', handleSlider.bind( null, parent, els[i] ), false );
 
 		}
 
@@ -30,10 +31,10 @@
 
 		if ( parent.classList.contains( className ) ) {
 			parent.classList.remove( className );
-			trigger.innerHTML = 'See More';
+			trigger.innerHTML = 'Read Synopsis';
 		} else {
 			parent.classList.add( className );
-			trigger.innerHTML = 'See Less';
+			trigger.innerHTML = 'Close Synopsis';
 		}
 
 	}
