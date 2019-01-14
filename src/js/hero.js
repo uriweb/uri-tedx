@@ -1,5 +1,5 @@
 /**
- * TEDxURI Scripts
+ * Hero Player
  *
  * @package uri-tedx
  */
