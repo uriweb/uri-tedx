@@ -10,7 +10,7 @@
 
 	function initSpeakers() {
 
-		var els, el, block, i;
+		var els, block, i;
 
 		els = document.querySelectorAll( '.block-slider-trigger' );
 
