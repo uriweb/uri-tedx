@@ -66,6 +66,27 @@
 		text-transform: lowercase;
     }
 	
+	h3 {
+		
+		font-size: 4vw;
+		position: relative;
+		text-transform: uppercase;
+		line-height: 1.2;
+		max-width: 80%;
+		
+		&:before {
+			display: block;
+			position: absolute;
+			top: -10px;
+			left: 0;
+			content: '';
+			height: 4px;
+			width: 20%;
+			background-color: $pink2019;
+		}
+		
+	}
+	
 	img {
 		width: 100%;
 		height: auto;
@@ -164,7 +185,7 @@
 			
 		}
 		
-		h1, h2 {
+		h1, h2, h3 {
 			color: #fff;
 		}
 		
@@ -191,6 +212,10 @@
 			
 		}
 		
+		h3:before {
+			background-color: $blue2019;
+		}
+		
 		.block-slider p em {
 			color: $blue2019;
 		}
@@ -214,8 +239,12 @@
 			
 		}
 		
-		h1, h2 {
+		h1, h2, h3 {
 			color: #fff;
+		}
+		
+		h3:before {
+			background-color: $blue2019;
 		}
 		
 		.block-slider p em {
@@ -240,7 +269,7 @@
 			max-width: 100%;
 			color: #000;
 			font-weight: 200;
-			font-size: 6vw;
+			font-size: 5vw;
 			line-height: 1.5;
 			
 			em {
@@ -394,6 +423,10 @@
 			font-size: 7vw;
 			line-height: 6vw;
 		}
+		
+		h3 {
+			font-size: 1.8vw;
+		}
         
         &>div:first-child,
         &>div:last-child {
@@ -402,7 +435,7 @@
 		
 		.block-slider p {
 			font-weight: 100;
-			font-size: 2.8vw;
+			font-size: 2.5vw;
 		}
 		
 		.block-slider-trigger {
