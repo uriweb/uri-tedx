@@ -5,7 +5,7 @@
 
 body.post-type-archive-talk {
 	
-	background: #000;
+	background: #222;
     
     .site-main>div figure {
         margin-right: 0;
@@ -14,22 +14,27 @@ body.post-type-archive-talk {
     
     .talk-archive {
         
-        background: #222;
+        background: #111;
+		border-bottom: 5px solid #740303;
         
         .talk-speaker {
-            font-size: 1rem;
+            font-size: 1.2rem;
             color: $tedred;
             font-weight: 600;
 			margin-bottom: 1rem;
         }
         
         .talk-event {
+			font-size: 1rem;
             font-weight: 400;
             color: #888;
+			margin-top: 3px;
         }
         
         h3 {
             color: #fff;
+			font-size: 1.3rem;
+			margin-bottom: 2rem;
         }
         
     }
