@@ -311,6 +311,8 @@ function uri_tedx_scripts() {
 
 	wp_enqueue_script( 'uri-tedx-navigation', get_template_directory_uri() . '/js/navigation.js', array(), uri_tedx_cache_buster(), true );
 
+	wp_enqueue_script( 'uri-tedx-smoothscroll', get_template_directory_uri() . '/js/smoothscroll.min.js', array(), uri_tedx_cache_buster(), true );
+
 	wp_enqueue_script( 'uri-tedx-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), uri_tedx_cache_buster(), true );
 
 	wp_enqueue_script( 'uri-tedx-scripts', get_template_directory_uri() . '/js/script.min.js', array(), uri_tedx_cache_buster(), true );
