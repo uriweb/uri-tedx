@@ -2,11 +2,11 @@
    COMPONENT LIBRARY
    ============================== */
 
-    
+
 .cl-card {
-	
+
 	border-radius: .3rem .3rem 0 0;
-	
+
 	h3 {
 		font-weight: 600;
 		font-size: 1.8rem;
@@ -15,7 +15,7 @@
 	p {
 		font-size: 1rem;
 	}
-	
+
 	img {
 		border-radius: .3rem .3rem 0 0;
 	}
@@ -25,12 +25,14 @@
 	}
 
 	&:hover .cl-button,
-	&:focus .cl-button {
+	&:focus .cl-button,
+  &:hover .button,
+	&:focus .button {
 		background: $tedred;
 		border-top: 1px solid $tedred;
 		color: #fff;
 	}
-	
+
 }
 
 .cl-hero {
@@ -40,7 +42,7 @@
 
 a.cl-button,
 span.cl-button {
-    
+
     display: inline-block;
 	width: initial;
     line-height: 2rem;
@@ -53,7 +55,7 @@ span.cl-button {
 	text-transform: none;
 	letter-spacing: inherit;
    	background: $tedred;
-	
+
 	&:hover,
     &:focus {
         border: none;
@@ -61,24 +63,24 @@ span.cl-button {
 		background: $tedred;
         box-shadow: 0 .1rem .3rem rgba(0,0,0,.5);
     }
-	
+
 	&.disabled {
 		color: #999;
     	border: 1px solid #bbb;
-		
+
 		&:hover,
 		&:focus {
 			border: 1px solid #666;
 			color: #555;
 		}
-		
+
 	}
-	
+
 	&.light {
 		color: #555;
 		background: #fff;
 	}
-	
+
 	&.forward {
 		position: relative;
 		padding-right: 30px;
@@ -96,5 +98,5 @@ span.cl-button {
 		border-bottom: 4px solid transparent;
 		border-left: 8px solid #fff;
 	}
-    
+
 }
