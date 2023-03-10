@@ -1,6 +1,6 @@
 {
   "name": "uri-tedx",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "The WordPress theme for TEDxURI",
   "themeName": "URI TEDx",
   "textDomain": "uri",
@@ -21,21 +21,22 @@
   "license": "GPL-3.0",
   "licenseURI": "http://www.gnu.org/licenses/gpl.html",
   "devDependencies": {
-    "autoprefixer": "^9.4.7",
-    "gulp": ">=4.0.0",
-    "gulp-changed": ">=3.2.0",
+    "autoprefixer": "^10.0.0",
+    "gulp": "^4.0.2",
+    "gulp-changed": ">=4.0.2",
     "gulp-concat": ">=2.6.1",
-    "gulp-header": "^2.0.7",
-    "gulp-imagemin": "^5.0.3",
+    "gulp-header": "^2.0.9",
+    "gulp-imagemin": "^7.1.0",
     "gulp-jscs": ">=4.1.0",
     "gulp-jshint": ">=2.0.4",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-shell": ">=0.6.5",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-shell": ">=0.8.0",
     "gulp-sourcemaps": ">=2.6.4",
     "gulp-strip-debug": ">=3.0.0",
     "gulp-uglify": "^3.0.1",
-    "jshint": "^2.9.7"
+    "jshint": "^2.9.7",
+    "sass": "^1.57.0"
   },
   "engines": {
     "node": ">=8.9.4",
@@ -54,6 +55,5 @@
       "Firefox >= 20",
       "iOS >=8"
     ]
-  },
-  "dependencies": {}
+  }
 }
