@@ -223,16 +223,19 @@ function uri_tedx_open_graph() {
 		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 
 		// use a larger image in twitter card if the image is wider than it is tall.
+		if ( $image ) {
 		$landscape = ( $image[1] > $image[2] );
 		if ( true === $landscape ) {
 			$summary_type = 'summary_large_image';
 		}
+	
 
 		$image_thumb = $image[0];
 		if ( empty( $image_thumb ) ) {
 			$image_thumb  = get_template_directory_uri() . '/images/logo_open_graph.jpg';
 			$summary_type = 'summary_large_image';
 		}
+	}
 
 		$title = get_the_title();
 		if ( empty( $title ) ) {
@@ -262,7 +265,7 @@ function uri_tedx_open_graph() {
 <meta property="og:title" content="<?php echo $title; ?>" />
 <meta property="og:description" content="<?php echo $excerpt; ?>" />
 <?php
-if ( $image_thumb ) :
+if ( isset( $image_thumb ) ) :
 ?>
 <meta property="og:image" content="<?php echo $image_thumb; ?>" />
 			<?php
