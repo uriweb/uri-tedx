@@ -226,14 +226,13 @@ function uri_tedx_open_graph() {
 		if ( $image ) {
 		$landscape = ( $image[1] > $image[2] );
 		if ( true === $landscape ) {
-			$summary_type = 'summary_large_image';
+				$summary_type = 'summary_large_image';
 		}
-	
 
 		$image_thumb = $image[0];
 		if ( empty( $image_thumb ) ) {
-			$image_thumb  = get_template_directory_uri() . '/images/logo_open_graph.jpg';
-			$summary_type = 'summary_large_image';
+				$image_thumb  = get_template_directory_uri() . '/images/logo_open_graph.jpg';
+				$summary_type = 'summary_large_image';
 		}
 	}
 
@@ -266,9 +265,9 @@ function uri_tedx_open_graph() {
 <meta property="og:description" content="<?php echo $excerpt; ?>" />
 <?php
 if ( isset( $image_thumb ) ) :
-?>
+				?>
 <meta property="og:image" content="<?php echo $image_thumb; ?>" />
-			<?php
+					<?php
 endif;
 	}
 }
