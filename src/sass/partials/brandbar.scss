@@ -29,7 +29,8 @@
     }
 
     img {
-        height: 35px;
+        height: 21px;
+        padding: 7px 0;
         transition: height .2s ease-in-out;
     }
     
@@ -121,6 +122,11 @@ body.ln-attend #ln-attend {
     
 
 @media screen and (min-width: 800px) {
+
+    #brandbar img {
+		height: 24px;
+        padding: 8px 0;
+	}
     
     #tedx-nav-label {
         display: none;
@@ -135,15 +141,15 @@ body.ln-attend #ln-attend {
         width: auto;
         float: right;
         display: block;
-        height: 35px;
-        line-height: 35px;
+        height: 40px;
+        line-height: 40px;
 		background: transparent;
         transition: height .2s ease-in-out, line-height .2s ease-in-out;
 
         li {
             display: inline-block;
             list-style: none;
-            line-height: 35px;
+            line-height: 40px;
             transition: all .2s ease-in-out;
         }
 
@@ -164,22 +170,4 @@ body.ln-attend #ln-attend {
         
     }
     
-}
-
-@media screen and (min-width: 1050px) {
-    #brandbar img {
-		height: 40px;
-	}
-    
-    #tedx-nav {
-        
-        height: 40px;
-        line-height: 40px;
-    
-        li {
-            line-height: 40px;
-            //font-size: .9rem;
-        }
-        
-    }
 }
