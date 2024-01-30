@@ -32,7 +32,8 @@
 						$twitter   = 'https://twitter.com/TEDxURI';
 						$youtube   = 'https://www.youtube.com/channel/UCbhjVxILP8IBOVKsbo7kbnQ';
 						$linkedin  = 'https://www.linkedin.com/company/tedxuri';
-						echo do_shortcode( '[cl-social style="light" facebook="' . $facebook . '" twitter="' . $twitter . '" youtube="' . $youtube . ' linkedin="' . $linkedin . '"]' );
+						$instagram = 'https://www.instagram.com/tedxuri';
+						echo do_shortcode( '[cl-social style="light" facebook="' . $facebook . '" twitter="' . $twitter . '" youtube="' . $youtube . ' linkedin="' . $linkedin . '" instagram="' . $instagram . '"]' );
 					}
 					?>
 
