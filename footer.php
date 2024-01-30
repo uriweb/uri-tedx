@@ -28,10 +28,12 @@
 
 					<?php
 					if ( function_exists( 'uri_cl_shortcode_social' ) ) {
-						$facebook  = 'https://www.facebook.com/TEDxURI';
+						$facebook  = 'https://www.facebook.com/profile.php?id=61555186445064';
 						$twitter   = 'https://twitter.com/TEDxURI';
 						$youtube   = 'https://www.youtube.com/channel/UCbhjVxILP8IBOVKsbo7kbnQ';
-						echo do_shortcode( '[cl-social style="light" facebook="' . $facebook . '" twitter="' . $twitter . '" youtube="' . $youtube . '"]' );
+						$linkedin  = 'https://www.linkedin.com/company/tedxuri';
+						$instagram = 'https://www.instagram.com/tedxuri';
+						echo do_shortcode( '[cl-social style="light" facebook="' . $facebook . '" twitter="' . $twitter . '" youtube="' . $youtube . ' linkedin="' . $linkedin . '" instagram="' . $instagram . '"]' );
 					}
 					?>
 

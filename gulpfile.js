@@ -20,14 +20,13 @@ var banner = ['/*',
   ''].join('\n');
 
 // include plug-ins
-var jshint = require('gulp-jshint');
-var jscs = require('gulp-jscs');
+var eslint = require('gulp-eslint');
 var changed = require('gulp-changed');
 var imagemin = require('gulp-imagemin');
 var concat = require('gulp-concat');
-var stripDebug = require('gulp-strip-debug');
-var uglify = require('gulp-uglify');
-var sass = require('gulp-sass');
+//var stripDebug = require('gulp-strip-debug');
+var terser = require('gulp-terser');
+var sass = require('gulp-sass')(require('sass'));
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('autoprefixer');
 var postcss = require('gulp-postcss');
@@ -47,17 +46,17 @@ gulp.task('scripts', scripts);
 function scripts(done) {
     
   gulp.src('./src/js/*.js')
-    .pipe(jshint(done))
-    .pipe(jshint.reporter('default'));
+    .pipe(eslint(done))
+    .pipe(eslint.format());
     
   gulp.src('./src/js/*.js')
-    .pipe(jscs(done))
-    .pipe(jscs.reporter());
+    .pipe(eslint(done))
+    .pipe(eslint.format());
 
   gulp.src('./src/js/*.js')
     .pipe(concat('script.min.js'))
     //.pipe(stripDebug())
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(header(banner, { pkg : pkg } ))
     .pipe(gulp.dest('./js/'));
     
@@ -74,7 +73,7 @@ function styles(done) {
 		.pipe(sourcemaps.init())
 		.pipe(sass(sassOptions).on('error', sass.logError))
 		.pipe(concat('style.css'))
-        .pipe(postcss([ autoprefixer() ]))
+    .pipe(postcss([ autoprefixer() ]))
 		.pipe(header(banner, { pkg : pkg } ))
 		.pipe(sourcemaps.write('./map'))
 		.pipe(gulp.dest('.'));

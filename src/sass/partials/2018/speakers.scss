@@ -5,8 +5,8 @@
    ============================== */
 
 
-.speaker-block {
-    
+.speaker-block-2018 {
+
 	padding: 0;
 	margin-top: 1px;
 	display: block;
@@ -14,7 +14,7 @@
     position: relative;
     left: 50%;
     margin-left: -50vw;
-    
+
     h1 {
         font-size: 1.5rem;
         font-weight: 400;
@@ -64,18 +64,18 @@
     &.reverse>div:last-child {
         order: 1;
     }
-    
+
 }
 
 @media screen and (min-width: 800px) {
-	.speaker-block {
-        
+	.speaker-block-2018 {
+
 		display: flex;
-        
+
         &>div:first-child,
         &>div:last-child {
             min-height: 500px;
         }
-        
+
     }
 }

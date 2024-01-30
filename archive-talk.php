@@ -13,6 +13,16 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 	<?php
+
+	query_posts(
+		 array(
+			 'post_type' => 'talk',
+			 'meta_key' => 'sortname',
+			 'orderby' => 'meta_value',
+			 'order' => 'ASC',
+		 )
+		);
+
 	if ( have_posts() ) :
 	?>
 

@@ -1,0 +1,17 @@
+{
+    "name": "uriweb/uri-tedx",
+    "type":  "wordpress-theme",
+    "description": "URI TEDx is a WordPress theme designed for the University of Rhode Island's TEDxURI website",
+    "authors": [
+        {
+            "name": "URI Web Communications",
+            "email": "web-group@uri.edu",
+            "homepage": "https://github.com/uriweb"
+        }
+    ],
+    "homepage": "https://www.uri.edu",
+    "license": "GPL-3.0-only",
+    "require": {
+        "php": ">=7.4"
+    }
+}

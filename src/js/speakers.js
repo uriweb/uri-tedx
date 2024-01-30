@@ -1,5 +1,5 @@
 /**
- * 2019 Speakers
+ * Speakers
  *
  * @package uri-tedx
  */
