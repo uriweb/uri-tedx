@@ -6,13 +6,17 @@ It is designed to be evergreen, and replaces the [uri-tedx-2018](https://github.
 
 ## What's new in 2.2.0
 
-* Adds a composer.json file and updates dependencies. 
-## What's new in 2.1.1
+URI TEDx 2.2.0 is a minor update.
 
-* Adds a [polyfill](http://iamdustan.com/smoothscroll/) for the [scroll behavior spec](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior)
+> ★ URI TEDx is now available on [Packagist](https://packagist.org/packages/uriweb/uri-tedx)
+
+* Updates TEDxURI logo
+* Updates social media footer links
+* Adds a custom field for sorting talks on archive pages
+* Transitions some styles to evergreen branding
 * Updates development tools
 
-For complete details, see the [commit history](https://github.com/uriweb/uri-tedx/pull/12/commits) and the [issue tracker](https://github.com/uriweb/uri-tedx/issues). 
+For complete details, see the [commit history](https://github.com/uriweb/uri-tedx/pull/23/commits) and the [issue tracker](https://github.com/uriweb/uri-tedx/issues).
 
 ## How do I get set up?
 
@@ -28,10 +32,9 @@ For complete details, see the [commit history](https://github.com/uriweb/uri-ted
 [![Master Build Status](https://travis-ci.org/uriweb/uri-tedx.svg?branch=master "Master build status")](https://travis-ci.org/uriweb/uri-tedx)
 [![CodeFactor](https://www.codefactor.io/repository/github/uriweb/uri-modern/badge/master)](https://www.codefactor.io/repository/github/uriweb/uri-tedx/overview/master)
 [![Codacy Badge](https://img.shields.io/codacy/grade/88f277d0f16b4fa68ae52c2ec7ed3480.svg)](https://www.codacy.com/app/uriweb/uri-tedx?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=uriweb/uri-tedx&amp;utm_campaign=Badge_Grade)
-[![devDependencies Status](https://david-dm.org/uriweb/uri-tedx/dev-status.svg "devDependencies status")](https://david-dm.org/uriweb/uri-tedx?type=dev)
 
 Contributors: Brandon Fuller  
 Tags: themes  
 Requires at least: 4.0  
-Tested up to: 4.9  
-Stable tag: 2.1.1  
+Tested up to: 6.1  
+Stable tag: 2.2.0  
