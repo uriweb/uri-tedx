@@ -10,6 +10,8 @@ URI TEDx 2.2.1 is a bug fix release.
 
 * Uses existing event names to sort talks on the Talks archive page
 * Removes sortname field
+* Fix issue with logo display
+* Add favicon
 
 For complete details, see the [commit history](https://github.com/uriweb/uri-tedx/pull/25/commits) and the [issue tracker](https://github.com/uriweb/uri-tedx/issues).
 
