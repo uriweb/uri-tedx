@@ -231,7 +231,7 @@ function uri_tedx_open_graph() {
 
 		$image_thumb = $image[0];
 		if ( empty( $image_thumb ) ) {
-				$image_thumb  = get_template_directory_uri() . '/images/logo_open_graph.jpg';
+				$image_thumb  = get_template_directory_uri() . '/images/logo_uri_open_graph.jpg';
 				$summary_type = 'summary_large_image';
 		}
 	}
