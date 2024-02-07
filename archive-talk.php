@@ -17,7 +17,7 @@ get_header(); ?>
 	query_posts(
 		 array(
 			 'post_type' => 'talk',
-			 'meta_key' => 'sortname',
+			 'meta_key' => 'event',
 			 'orderby' => 'meta_value',
 			 'order' => 'ASC',
 		 )
