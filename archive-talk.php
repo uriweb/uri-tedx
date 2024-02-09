@@ -14,15 +14,6 @@ get_header(); ?>
 
 	<?php
 
-	query_posts(
-		 array(
-			 'post_type' => 'talk',
-			 'meta_key' => 'event',
-			 'orderby' => 'meta_value',
-			 'order' => 'ASC',
-		 )
-		);
-
 	if ( have_posts() ) :
 	?>
 
