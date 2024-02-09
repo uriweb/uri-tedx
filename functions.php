@@ -539,5 +539,21 @@ function uri_tedx_hide_archive_title( $title ) {
 
 add_filter( 'get_the_archive_title', 'uri_tedx_hide_archive_title' );
 
+/**
+ * Modify the query for the Talks archive page
+ */
+function uri_tedx_set_talks_per_page( $query ) {
+	if ( ! is_admin() && $query->is_main_query() ) {
+		// Not a query for an admin page.
+		// It's the main query for a front end page of your site.
 
+		if ( is_post_type_archive( 'talk' ) ) {
+			$query->set( 'orderby', 'meta_value' );
+			$query->set( 'meta_key', 'event' );
+			$query->set( 'order', 'DEC' );
+			$query->set( 'posts_per_page', 60 );
+		}
+	}
+}
+add_action( 'pre_get_posts', 'uri_tedx_set_talks_per_page' );
 

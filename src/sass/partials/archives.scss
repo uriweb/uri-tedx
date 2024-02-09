@@ -42,8 +42,7 @@ body.post-type-archive-talk {
     .posts-navigation {
         margin: 2rem 0;
         padding: 2rem 0;
-        border-top: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
+        border-top: 1px solid #777;
         font-size: 1rem;
     }
     
@@ -74,24 +73,36 @@ body.post-type-archive-talk {
 			border-bottom: 7px solid transparent;
 		}
     
-		.nav-previous a {
-			
-			padding-left: 30px;
-			
-			&:before {
-				left: 8px;
-				border-right: 12px solid #fff;
+		.nav-previous {
+
+			float: left;
+		
+			a {
+				
+				padding-left: 30px;
+				
+				&:before {
+					left: 8px;
+					border-right: 12px solid #fff;
+				}
+				
 			}
-			
+
 		}
     
-		.nav-next a {
+		.nav-next {
 
-			padding-right: 30px;
+			float: right;
+			
+			a {
 
-			&:after {
-				right: 8px;
-				border-left: 12px solid #fff;
+				padding-right: 30px;
+
+				&:after {
+					right: 8px;
+					border-left: 12px solid #fff;
+				}
+
 			}
 
 		}
