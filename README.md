@@ -45,4 +45,4 @@ Contributors: Brandon Fuller
 Tags: themes  
 Requires at least: 4.0  
 Tested up to: 6.1  
-Stable tag: 2.2.2  
+Stable tag: 2.3.0  
