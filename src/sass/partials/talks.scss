@@ -23,7 +23,7 @@ body.single-talk {
     
     .talk-speaker {
         font-size: 1.2rem;
-        margin-bottom: 0;
+        margin-bottom: .5rem;
         //border-bottom: 1px solid #ddd;
         max-width: 100%;
         //padding-bottom: .5rem;
@@ -93,7 +93,7 @@ body.single-talk {
     .about-this-speaker {
         padding: 1.5rem;
         background: #f3f3f3;
-        border-radius: .5rem;
+        border-radius: 1rem;
         margin-bottom: 4rem;
     }
     
@@ -113,7 +113,7 @@ body.single-talk {
         img {
             width: 100%;
 			height: auto;
-            border-radius: 50%;
+            border-radius: .5rem;
         }
         
     }
@@ -126,13 +126,12 @@ body.single-talk {
         h1 {
             font-size: 1.2rem;
             color: #000;
-            margin: 0;
+            margin: 0 0 .2rem;
         }
         
         h2 {
             font-size: 1rem;
-            margin-top: 0;
-            margin-bottom: 1rem;
+            margin: 0;
             color: #888;
             font-weight: 300;
         }
@@ -140,7 +139,7 @@ body.single-talk {
         .bio-content {
             font-size: .9rem;
             padding: 0;
-            margin: 0;
+            margin: 1rem 0 0;
         }
         
     }
