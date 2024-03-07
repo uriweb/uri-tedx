@@ -45,7 +45,7 @@ if ( ! empty( $gtm ) ) {
 				<label for="tedx-nav-toggle" id="tedx-nav-label"><span>Menu</span></label>
 				<ul id="tedx-nav">
 					<li id="ln-talks"><a href="https://www.uri.edu/tedx/talks">Talks</a></li>
-					<li id="ln-speakers"><a href="https://www.uri.edu/tedx/speakers">Speakers</a></li>
+					<li id="ln-speakers"><a href="https://www.uri.edu/tedx/presenters">Presenters</a></li>
 					<li id="ln-attend"><a href="https://www.uri.edu/tedx/attend">Attend</a></li>
 					<li id="ln-about"><a href="https://www.uri.edu/tedx/about">About</a></li>
 				</ul>
