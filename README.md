@@ -29,7 +29,6 @@ For complete details, see the [commit history](https://github.com/uriweb/uri-ted
 [![GitHub Release Date](https://img.shields.io/github/release-date/uriweb/uri-tedx.svg)](https://github.com/uriweb/uri-tedx/releases/latest)
 [![Master Build Status](https://travis-ci.org/uriweb/uri-tedx.svg?branch=master "Master build status")](https://travis-ci.org/uriweb/uri-tedx)
 [![CodeFactor](https://www.codefactor.io/repository/github/uriweb/uri-modern/badge/master)](https://www.codefactor.io/repository/github/uriweb/uri-tedx/overview/master)
-[![Codacy Badge](https://img.shields.io/codacy/grade/88f277d0f16b4fa68ae52c2ec7ed3480.svg)](https://www.codacy.com/app/uriweb/uri-tedx?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=uriweb/uri-tedx&amp;utm_campaign=Badge_Grade)
 
 Contributors: Brandon Fuller  
 Tags: themes  
