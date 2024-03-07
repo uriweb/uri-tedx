@@ -4,27 +4,17 @@ URI TEDx is a WordPress theme designed for the University of Rhode Island's TEDx
 
 It is designed to be evergreen, and replaces the [uri-tedx-2018](https://github.com/uriweb/uri-tedx-2018) annual theme.
 
-## What's new in 2.2.2
+## What's new in 2.3.0
 
-URI TEDx 2.2.2 is a bug fix release.
+URI TEDx 2.3 is a minor release focused on style adjustments.
 
-* Fixes an query issue on Talks archive pages
+* Updates evergreen speakers page styles
+* Adds styles for 2019 speakers page, previously in the WordPress customizer
+* Changes header and footer "Speakers" link to "Presenters"
+* Adjusts Talks post styles, including better support for non-square bio pictures
+* Removes non-functioning YouTube video statistics on Talks posts
 
-For complete details, see the [commit history](https://github.com/uriweb/uri-tedx/pull/27/commits) and the [issue tracker](https://github.com/uriweb/uri-tedx/issues).
-
-## What's new in 2.2.0
-
-URI TEDx 2.2.0 is a minor update.
-
-> ★ URI TEDx is now available on [Packagist](https://packagist.org/packages/uriweb/uri-tedx)
-
-* Updates TEDxURI logo
-* Updates social media footer links
-* Adds a custom field for sorting talks on archive pages
-* Transitions some styles to evergreen branding
-* Updates development tools
-
-For complete details, see the [commit history](https://github.com/uriweb/uri-tedx/pull/23/commits) and the [issue tracker](https://github.com/uriweb/uri-tedx/issues).
+For complete details, see the [commit history](https://github.com/uriweb/uri-tedx/pull/29/commits) and the [issue tracker](https://github.com/uriweb/uri-tedx/issues).
 
 ## How do I get set up?
 
