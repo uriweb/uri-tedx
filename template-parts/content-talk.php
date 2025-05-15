@@ -48,7 +48,7 @@
 						<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-hashtags="tedxuri" data-show-count="false">Tweet</a>
 						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 					</div>
-					<div class="smi-widget share-button share-facebook"><iframe src="https://www.facebook.com/plugins/share_button.php?href=<?php echo urlencode( utf8_encode( get_permalink() ) ); ?>&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
+					<div class="smi-widget share-button share-facebook"><iframe src="https://www.facebook.com/plugins/share_button.php?href=<?php echo urlencode(mb_convert_encoding(get_permalink(), 'UTF-8', 'ISO-8859-1')); ?>&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
 				</div>
 			</section>
 
