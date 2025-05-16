@@ -4,13 +4,13 @@ Theme URI: https://www.uri.edu/tedx
 Author: University of Rhode Island
 Author URI: https://today.uri.edu
 Description: The WordPress theme for TEDxURI
-Version: 3.0.0
+Version: 3.0.1
 License: GPL-3.0
 License URI: http://www.gnu.org/licenses/gpl.html
 Text Domain: uri
 Tags: education, theme-options
 
-@version v3.0.0
+@version v3.0.1
 @author Brandon Fuller <bjcfuller@uri.edu>
 
 */
