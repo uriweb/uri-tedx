@@ -4,9 +4,9 @@ URI TEDx is a WordPress theme designed for the University of Rhode Island's TEDx
 
 It is designed to be evergreen, and replaces the [uri-tedx-2018](https://github.com/uriweb/uri-tedx-2018) annual theme.
 
-## What's new in 3.0.1
+## What's new in 3.0.2
 
-* Fixes a deprecation notice in PHP 8. 
+* Add support for ```wp_body_open```
 
 For complete details, see the [commit history](https://github.com/uriweb/uri-tedx/pull/31/commits) and the [issue tracker](https://github.com/uriweb/uri-tedx/issues).
 
@@ -28,4 +28,4 @@ Contributors: Brandon Fuller
 Tags: themes  
 Requires at least: 4.0  
 Tested up to: 6.8.1  
-Stable tag: 3.0.1  
+Stable tag: 3.0.2  
