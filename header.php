@@ -35,7 +35,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'uri' ); ?></a>
 				
 			<div class="content-width">
-				<a href="https://www.uri.edu/tedx/" title="TEDxURI"><img src="<?php echo get_stylesheet_directory_uri() . '/images/logo_uri_white.png'; ?>" alt="TEDxURI" /></a>
+				<a href="https://www.uri.edu/tedx/" title="TEDxURI Home" aria-label="Ted-X URI Home"><img src="<?php echo get_stylesheet_directory_uri() . '/images/logo_uri_white.png'; ?>" alt="TEDxURI" /></a>
 				<input type="checkbox" id="tedx-nav-toggle" role="presentation" aria-label="Open the TEDxURI site menu when browsing on mobile">
 				<label for="tedx-nav-toggle" id="tedx-nav-label"><span>Menu</span></label>
 				<ul id="tedx-nav">
