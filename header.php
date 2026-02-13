@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The header for our theme
  *
@@ -7,48 +8,49 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package uri-tedx
+ * @todo menu icon on mobile should be a button, not checkbox
  */
 
 ?>
 <! DOCTYPE html>
-<html <?php language_attributes(); ?>>
-	
-<head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+	<html <?php language_attributes(); ?>>
 
-<?php wp_head(); ?>
+	<head>
+		<meta charset="<?php bloginfo('charset'); ?>">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
 
-<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri() . '/images/favicon.png'; ?>">
+		<?php wp_head(); ?>
 
-</head>
-	
-<body <?php body_class(); ?>>
+		<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri() . '/images/favicon.png'; ?>">
 
-<?php wp_body_open(); ?>
-	
-<div id="page" class="site">
+	</head>
 
-	<div id="masthead">
-		<header id="brandbar" class="site-header" role="banner">
-			<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'uri' ); ?></a>
-				
-			<div class="content-width">
-				<a href="https://www.uri.edu/tedx/" title="TEDxURI Home" aria-label="Ted-X URI Home"><img src="<?php echo get_stylesheet_directory_uri() . '/images/logo_uri_white.png'; ?>" alt="TEDxURI" /></a>
-				<input type="checkbox" id="tedx-nav-toggle" role="presentation" aria-label="Open the TEDxURI site menu when browsing on mobile">
-				<label for="tedx-nav-toggle" id="tedx-nav-label"><span>Menu</span></label>
-				<ul id="tedx-nav">
-					<li id="ln-talks"><a href="https://www.uri.edu/tedx/talks">Talks</a></li>
-					<li id="ln-speakers"><a href="https://www.uri.edu/tedx/presenters">Presenters</a></li>
-					<li id="ln-attend"><a href="https://www.uri.edu/tedx/attend">Attend</a></li>
-					<li id="ln-about"><a href="https://www.uri.edu/tedx/about">About</a></li>
-				</ul>
+	<body <?php body_class(); ?>>
+
+		<?php wp_body_open(); ?>
+
+		<div id="page" class="site">
+
+			<div id="masthead">
+				<header id="brandbar" class="site-header" role="banner">
+					<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'uri'); ?></a>
+
+					<div class="content-width">
+						<a href="https://www.uri.edu/tedx/" title="TEDxURI Home" aria-label="Ted-X URI Home"><img src="<?php echo get_stylesheet_directory_uri() . '/images/logo_uri_white.png'; ?>" alt="TEDxURI" /></a>
+						<input type="checkbox" id="tedx-nav-toggle" role="presentation" aria-label="Open the TEDxURI site menu when browsing on mobile">
+						<label for="tedx-nav-toggle" id="tedx-nav-label"><span>Menu</span></label>
+						<nav id="tedx-nav" aria-label="Site Menu">
+							<ul>
+								<li id="ln-talks"><a href="https://www.uri.edu/tedx/talks">Talks</a></li>
+								<li id="ln-speakers"><a href="https://www.uri.edu/tedx/presenters">Presenters</a></li>
+								<li id="ln-attend"><a href="https://www.uri.edu/tedx/attend">Attend</a></li>
+								<li id="ln-about"><a href="https://www.uri.edu/tedx/about">About</a></li>
+							</ul>
+						</nav>
+					</div>
+
+				</header><!-- #brandbar -->
 			</div>
 
-		</header><!-- #brandbar -->
-	</div>
-	
-	<div id="content" class="site-content">
-		
-	
+			<div id="content" class="site-content">
