@@ -17,7 +17,7 @@
 <footer id="globalfooter">
 	<div class="content-width">
 		<div id="footer-content">
-			<nav>
+			<nav aria-label="Footer Menu">
 				<ul id="footer-nav">
 					<li><a href="https://www.uri.edu/tedx/talks">Talks</a></li>
 					<li><a href="https://www.uri.edu/tedx/presenters">Presenters</a></li>
