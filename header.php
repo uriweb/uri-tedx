@@ -29,10 +29,10 @@
 <?php wp_body_open(); ?>
 	
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'uri' ); ?></a>
 
 	<div id="masthead">
 		<header id="brandbar" class="site-header" role="banner">
+			<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'uri' ); ?></a>
 				
 			<div class="content-width">
 				<a href="https://www.uri.edu/tedx/" title="TEDxURI"><img src="<?php echo get_stylesheet_directory_uri() . '/images/logo_uri_white.png'; ?>" alt="TEDxURI" /></a>
