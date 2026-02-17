@@ -20,7 +20,7 @@
 
 			<?php if ( uri_tedx_get_field( 'ytid' ) ) { ?>
 			<div class="theatre breakout">
-				<iframe width="100%" height="500" src="https://www.youtube.com/embed/<?php the_field( 'ytid' ); ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe width="100%" height="500" title="<?php the_title();?>" src="https://www.youtube.com/embed/<?php the_field( 'ytid' ); ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 			<?php } ?>
 
