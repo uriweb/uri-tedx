@@ -76,7 +76,7 @@
 			<section>
 			<?php if ( uri_tedx_get_field( 'transcript' ) ) { ?>
 				<div class="transcript">
-					<h2 class="h1">Transcript</h2>
+					<h2>Transcript</h2>
 					<?php the_field( 'transcript' ); ?>
 				</div>
 			<?php } ?>
@@ -127,7 +127,7 @@
 				</div>
 
 				<?php if ( uri_tedx_get_field( 'title' ) ) { ?>
-				<h3 class="talk-title"><?php the_field( 'title' ); ?></h3>
+				<h2 class="talk-title h3"><?php the_field( 'title' ); ?></h2>
 				<?php } ?>
 
 			</div>
