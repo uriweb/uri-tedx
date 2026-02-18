@@ -123,7 +123,7 @@
 					the_field( 'name' );
 					if ( uri_tedx_get_field( 'event' ) ) {
 					?>
-					<div class="talk-event"><?php the_field( 'event' ); ?></div>
+					<div class="talk-event talk-event-on-black"><?php the_field( 'event' ); ?></div>
 					<?php } ?>
 				</div>
 
