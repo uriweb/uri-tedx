@@ -26,19 +26,20 @@
 
 			<section>
 				<div class="talk-info">
+					<?php if ( uri_tedx_get_field( 'title' ) ) { ?>
+					<h1 class="talk-title h3"><?php the_field( 'title' ); ?></h1>
+					<?php } ?>
+
 					<?php if ( uri_tedx_get_field( 'name' ) ) { ?>
 					<h2 class="talk-speaker h1">
 						<?php
 						the_field( 'name' );
 						if ( uri_tedx_get_field( 'event' ) ) {
 						?>
-						<span class="talk-event">at <?php the_field( 'event' ); ?></span>
+						<span class="talk-event">at <?php the_field( 'event' ); ?></span></h2>
 						<?php } ?>
-					</h2>
 					<?php } ?>
-					<?php if ( uri_tedx_get_field( 'title' ) ) { ?>
-					<h3 class="talk-title h2"><?php the_field( 'title' ); ?></h3>
-					<?php } ?>
+					
 					<?php if ( uri_tedx_get_field( 'description' ) ) { ?>
 					<p class="talk-description"><?php the_field( 'description' ); ?></p>
 					<?php } ?>
@@ -64,7 +65,7 @@
 						<h2 class="bio-name h1"><span class="sr-only">About</span> <?php the_field( 'name' ); ?></h2>
 						<?php } ?>
 						<?php if ( uri_tedx_get_field( 'profession' ) ) { ?>
-						<h3 class="bio-profession h2"><?php the_field( 'profession' ); ?></h3>
+						<div class="bio-profession h2"><?php the_field( 'profession' ); ?></div>
 						<?php } ?>
 						<?php if ( uri_tedx_get_field( 'bio' ) ) { ?>
 						<p class="bio-content"><?php the_field( 'bio' ); ?></p>
