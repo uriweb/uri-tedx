@@ -20,7 +20,7 @@
 
 			<?php if ( uri_tedx_get_field( 'ytid' ) ) { ?>
 			<div class="theatre breakout">
-				<iframe width="100%" height="500" title="<?php the_title();?>" src="https://www.youtube.com/embed/<?php the_field( 'ytid' ); ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe width="100%" height="500" title="<?php the_title();?>" src="https://www.youtube.com/embed/<?php the_field( 'ytid' ); ?>" frameborder="0" title="<?php the_title(); ?>" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 			<?php } ?>
 
@@ -48,7 +48,7 @@
 						<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-hashtags="tedxuri" data-show-count="false">Tweet</a>
 						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 					</div>
-					<div class="smi-widget share-button share-facebook"><iframe src="https://www.facebook.com/plugins/share_button.php?href=<?php echo urlencode(mb_convert_encoding(get_permalink(), 'UTF-8', 'ISO-8859-1')); ?>&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
+					<div class="smi-widget share-button share-facebook"><iframe src="https://www.facebook.com/plugins/share_button.php?href=<?php echo urlencode(mb_convert_encoding(get_permalink(), 'UTF-8', 'ISO-8859-1')); ?>&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" title="Share on Facebook" aria-label="Share on Facebook" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
 				</div>
 			</section>
 
@@ -61,7 +61,7 @@
 					<?php } ?>
 					<div class="bio">
 						<?php if ( uri_tedx_get_field( 'name' ) ) { ?>
-						<h2 class="bio-name h1"><?php the_field( 'name' ); ?></h2>
+						<h2 class="bio-name h1"><span class="sr-only">About</span> <?php the_field( 'name' ); ?></h2>
 						<?php } ?>
 						<?php if ( uri_tedx_get_field( 'profession' ) ) { ?>
 						<h3 class="bio-profession h2"><?php the_field( 'profession' ); ?></h3>
