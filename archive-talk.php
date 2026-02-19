@@ -18,7 +18,7 @@ get_header(); ?>
 	?>
 
 			<header class="page-header">
-				<h1 class="entry-header">Browse Talks</h1>
+				<h1 class="entry-header">Talks</h1>
 			</header><!-- .page-header -->
 			
 			<div class="cl-tiles fourths">

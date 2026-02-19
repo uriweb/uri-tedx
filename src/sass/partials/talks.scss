@@ -30,7 +30,7 @@ body.single-talk {
     }
     
     .talk-event {
-        color: #888;
+        color: #707070;
         font-weight: 400;
     }
     
@@ -43,6 +43,7 @@ body.single-talk {
     .talk-description {
         font-size: 1.4rem;
         font-weight: 300;
+        margin-top: 2rem;
     }
     
     .social-media-integration {
@@ -128,11 +129,25 @@ body.single-talk {
             color: #000;
             margin: 0 0 .2rem;
         }
+
+        .h1 {
+            font-size: 1.2rem;
+            color: #000;
+            margin: 0 0 .2rem;
+            font-weight: 900;
+        }
         
         h2 {
             font-size: 1rem;
             margin: 0;
             color: #888;
+            font-weight: 300;
+        }
+
+        .h2 {
+            font-size: 1rem;
+            margin: 0;
+            color: 636363;
             font-weight: 300;
         }
         
