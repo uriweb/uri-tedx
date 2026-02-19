@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,11 +12,12 @@
 
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
-	<footer id="globalfooter">
-		<div class="content-width">
-			<div id="footer-content">
+<footer id="globalfooter">
+	<div class="content-width">
+		<div id="footer-content">
+			<nav aria-label="Footer Menu">
 				<ul id="footer-nav">
 					<li><a href="https://www.uri.edu/tedx/talks">Talks</a></li>
 					<li><a href="https://www.uri.edu/tedx/presenters">Presenters</a></li>
@@ -24,27 +26,29 @@
 					<li><a href="https://www.ted.com/tedx">TEDx</a></li>
 					<li><a href="https://www.uri.edu/">uri.edu</a></li>
 				</ul>
-				<div id="footer-social">
+			</nav>
+			<div id="footer-social">
 
-					<?php
-					if ( function_exists( 'uri_cl_shortcode_social' ) ) {
-						$facebook  = 'https://www.facebook.com/profile.php?id=61555186445064';
-						$twitter   = 'https://twitter.com/TEDxURI';
-						$youtube   = 'https://www.youtube.com/channel/UCbhjVxILP8IBOVKsbo7kbnQ';
-						$linkedin  = 'https://www.linkedin.com/company/tedxuri';
-						$instagram = 'https://www.instagram.com/tedxuri';
-						echo do_shortcode( '[cl-social style="light" facebook="' . $facebook . '" twitter="' . $twitter . '" youtube="' . $youtube . ' linkedin="' . $linkedin . '" instagram="' . $instagram . '"]' );
-					}
-					?>
+				<?php
+				if (function_exists('uri_cl_shortcode_social')) {
+					$facebook  = 'https://www.facebook.com/profile.php?id=61555186445064';
+					$twitter   = 'https://twitter.com/TEDxURI';
+					$youtube   = 'https://www.youtube.com/channel/UCbhjVxILP8IBOVKsbo7kbnQ';
+					$linkedin  = 'https://www.linkedin.com/company/tedxuri';
+					$instagram = 'https://www.instagram.com/tedxuri';
+					echo do_shortcode('[cl-social style="light" facebook="' . $facebook . '" twitter="' . $twitter . '" youtube="' . $youtube . ' linkedin="' . $linkedin . '" instagram="' . $instagram . '"]');
+				}
+				?>
 
-				</div>
 			</div>
-			<div id="disclaimer">This independent TEDx event is operated under license from TED.</div>
 		</div>
-	</footer><!-- #globalfooter -->
+		<div id="disclaimer">This independent TEDx event is operated under license from TED.</div>
+	</div>
+</footer><!-- #globalfooter -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
