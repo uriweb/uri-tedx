@@ -114,14 +114,15 @@ body.post-type-archive-talk #ln-talks,
 body.single-talk #ln-talks,
 body.ln-about #ln-about,
 body.ln-speakers #ln-speakers,
-body.ln-attend #ln-attend {
+body.ln-attend #ln-attend,
+body.ln-audition #ln-audition {
     a {
         color: $tedred;
     }
 }
     
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 
     #brandbar img {
 		height: 24px;
