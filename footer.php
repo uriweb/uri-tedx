@@ -19,9 +19,6 @@
 		<div id="footer-content">
 			<nav aria-label="Footer Menu">
 				<ul id="footer-nav">
-					<li><a href="https://www.uri.edu/tedx/talks">Talks</a></li>
-					<li><a href="https://www.uri.edu/tedx/presenters">Presenters</a></li>
-					<li><a href="https://www.uri.edu/tedx/attend">Attend</a></li>
 					<li><a href="https://www.uri.edu/tedx/about">About</a></li>
 					<li><a href="https://www.ted.com/tedx">TEDx</a></li>
 					<li><a href="https://www.uri.edu/">uri.edu</a></li>
